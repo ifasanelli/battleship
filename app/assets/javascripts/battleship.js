@@ -59,7 +59,6 @@ const battleship = {
         //this.board.fill('');
         this.draw();
         this.gameover = false;
-<<<<<<< HEAD
         this.level();
         if (this.nivel == 'f' || this.nivel == 'F' || this.nivel == 'm' || 
             this.nivel == 'M' || this.nivel == 'i' ||this.nivel == 'I' ){
@@ -76,9 +75,6 @@ const battleship = {
         }, function(){
             $(this).css("background-color", "#34495e");
         }); 
-=======
-        //alert("Clique no segundo tabuleiro para posicionar seus navios");     
->>>>>>> 69f0bb474df519e0fb0724acd5e8722c2952de58
     },
 
     game_is_over: function() {
