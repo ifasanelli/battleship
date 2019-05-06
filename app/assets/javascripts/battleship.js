@@ -39,7 +39,7 @@ const battleship = {
         //this.board.fill('');
         this.draw();
         this.gameover = false;
-        alert("Clique no segundo tabuleiro para posicionar seus navios");     
+        //alert("Clique no segundo tabuleiro para posicionar seus navios");     
     },
 
     game_is_over: function() {
