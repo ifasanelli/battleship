@@ -28,7 +28,7 @@ nav{
 main{
     width: auto;
     height: auto;
-    display: none;
+    display: block;
 }
 
 
