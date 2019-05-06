@@ -1,9 +1,30 @@
+<!DOCTYPE html>
 
-<div class='game' id='board1'></div>
-<div class='game' id='board2'></div>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Battleship</title>
+        <%= javascript_include_tag "battleship", "data-turbolinks-track" => true  %>
+        <%= stylesheet_link_tag "style.css" %>
+    </head>
+    <body>
+        <header>
+            <figure>
+                <img class="logotipo" src="assets/logotipo.png" alt="Logotipo"></img>
+            </figure>
+            <nav>
+                <p>PLAY!</p>
+            </nav>
+        </header>
+        <main>
+            <div class='game' id='board1'></div>
+            <div class='game' id='board2'></div>
+        </main>
+        
+    </body>
+    
+</html>
 
-<%= javascript_include_tag "battleship", "data-turbolinks-track" => true  %>
-<%=stylesheet_link_tag "style.css" %>
 <script>
 battleship.init( document.querySelector('#board1') );
 battleship.init1( document.querySelector('#board2') );
