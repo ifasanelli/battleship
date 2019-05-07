@@ -1225,3 +1225,26 @@ const battleship = {
         }
     },
 };                      
+
+$(play);
+function play(){
+    $('nav').delay(500).slideDown(500);
+    $('#play').click(function(){
+        $('nav').fadeOut(400,function(){
+            $('main').slideDown(400,function(){
+                  battleship.init( document.querySelector('#board1') ),
+                  battleship.init1( document.querySelector('#board2') ),
+                  battleship.start()
+            })
+        });
+        
+            // battleship.init( document.querySelector('#board1') ),
+            // battleship.init1( document.querySelector('#board2') ),
+            // battleship.start()
+        
+
+        
+       
+        
+    });
+}
