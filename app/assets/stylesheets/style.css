@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+ *{
+     margin: 0;
+     padding: 0;
+ }
 body{
  max-width:1366px;
  max-height:768px;
@@ -24,6 +29,22 @@ nav{
     width: 45%;
     height: 60vh;
     background-color: rgba(0,255,0,0.4);
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 60px;
+    padding-top: 1em;
+}
+ li:nth-child(even){
+     color: #b71d1a;
+ }
+li{
+    list-style: none;
+    padding-top: 0.5em;
+    color:#f9a01b;
+}
+
+a:hover{
+    cursor: pointer;
+    font-size: 70px;
 }
 main{
     width: auto;
