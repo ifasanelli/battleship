@@ -1253,6 +1253,11 @@ function play(){
             $('#divScore').slideDown(400)
         })
     })
+     $('#aRegister').click(function(){
+        $('nav').slideUp(400,function(){
+            $('#divRegister').slideDown(400)
+        })
+    })
     
     $(".return").click(function() {
         $(this).parent("div").slideUp(400,function(){

@@ -23,23 +23,69 @@
                         <a id="aLogin">ENTRAR</a>
                     </li>
                     <li>
+                        <a id="aRegister">CADASTRAR</a>
+                    </li>
+                    <li>
                         <a id="aScore">PLACAR</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <div class='modals' id='divLogin'>
-            <form>
-                <label for="nome">Apelido:</label><br>
-                <input type="text" name="nome" placeholder ="apelido"/><br>
+            <button class="return">VOLTAR</button>
+            <form method= "post">
+                <label for="apelido">Apelido:</label><br>
+                <input type="text" name="apelido" placeholder ="apelido"/><br>
                 <label for="senha">Senha:</label><br>
                 <input type="password" name="senha" placeholder="senha"/><br>
+                <input class= "button" type="submit" value="ENTRAR"/>
+            </form>
+            
+        </div>
+        <div class='modals' id='divRegister'>
+            <button class="return">VOLTAR</button>
+            <form method= "post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" name="nome" placeholder ="nome"/><br>
+                 <label for="nome">Apelido:</label><br>
+                <input type="text" name="apelido" placeholder ="apelido"/><br>
+                <label for="senha">Senha:</label><br>
+                <input type="password" name="senha" placeholder="senha"/><br>
+                <input type="password" name="confSenha" placeholder=" confirme senha"/><br>
                 <input class= "button" type="submit" value="entrar"/>
             </form>
-            <button class="return"><</button>
+            
         </div>
          <div class='modals' id='divScore'>
-              <button class="return"><</button>
+              <button class="return">VOLTAR</button>
+              <table class="tableScore">
+                  <thead>
+                      <tr>
+                          <th>
+                              JOGADOR
+                          </th>
+                          <th>
+                              PONTUAÇÃO
+                          </th>
+                      </tr>
+                  </thead>
+                  <tr>
+                      <td>-------</td>
+                      <td>-------</td>
+                  </tr>
+                  <tr>
+                      <td>--------</td>
+                      <td>-------</td>
+                  </tr>
+                  <tr>
+                      <td>--------</td>
+                      <td>-------</td>
+                  </tr>
+                  <tr>
+                      <td>-------</td>
+                      <td>-------</td>
+                  </tr>
+              </table>
         </div>
         <main>
             <div class='game' id='board1'></div>

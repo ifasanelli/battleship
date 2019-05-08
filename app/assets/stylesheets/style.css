@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
  *{
      margin: 0;
      padding: 0;
@@ -40,7 +42,7 @@ nav, .modals{
  }
 li{
     list-style: none;
-    padding-top: 0.5em;
+    padding-top: 0.2em;
     color:#f9a01b;
 }
 
@@ -60,12 +62,24 @@ main{
 
 .modals{
     text-align: center;
-    padding-top: 2em;
     color: rgba(249,169,27,1);
     font-size: 2em;
 }
 
- input{
+.tableScore{
+    font-size: 0.8em;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    margin: auto;
+    width: 50%;
+}
+
+.tableScore th,td{
+     border: 1px solid white;
+     padding: 0.5em;
+}
+
+input{
     border:none;
     background-color: rgba(249,169,27,1);
     color: white;
@@ -88,12 +102,13 @@ label{
 }
 .return{
     color: white;
-    position: relative;
-    bottom: -150px;
-    left: 10px;
     display:block; 
+    margin-left: 1em;
+    margin-top: -0.5em;
 }
-
+.return, input{
+    font-family: 'Russo One', sans-serif;
+}
 
 
 
