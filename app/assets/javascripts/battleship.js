@@ -1253,4 +1253,10 @@ function play(){
             $('#divScore').slideDown(400)
         })
     })
+    
+    $(".return").click(function() {
+        $(this).parent("div").slideUp(400,function(){
+            $("nav").slideDown(400)
+        })
+    })
 }
