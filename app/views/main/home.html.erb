@@ -17,17 +17,30 @@
             <nav>
                 <ul>
                     <li>
-                        <a id ="play">PlAY</a>
+                        <a id ="play">JOGAR</a>
                     </li>
                     <li>
-                        <a>LOGIN</a>
+                        <a id="aLogin">ENTRAR</a>
                     </li>
                     <li>
-                        <a>SCORE</a>
+                        <a id="aScore">PLACAR</a>
                     </li>
                 </ul>
             </nav>
         </header>
+        <div class='modals' id='divLogin'>
+            <form>
+                <label for="nome">Apelido:</label><br>
+                <input type="text" name="nome" placeholder ="apelido"/><br>
+                <label for="senha">Senha:</label><br>
+                <input type="password" name="senha" placeholder="senha"/><br>
+                <input class= "button" type="submit" value="entrar"/>
+            </form>
+            <button class="return"><</button>
+        </div>
+         <div class='modals' id='divScore'>
+              <button class="return"><</button>
+        </div>
         <main>
             <div class='game' id='board1'></div>
             <div class='game' id='board2'></div>

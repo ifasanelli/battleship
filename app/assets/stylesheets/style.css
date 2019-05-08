@@ -25,7 +25,7 @@ header{
     height: 100px;
 }
 
-nav{
+nav, .modals{
     margin: auto;
     width: 45%;
     height: 60vh;
@@ -57,6 +57,44 @@ main{
     background-color: black;
     text-align: center;
 }
+
+.modals{
+    text-align: center;
+    padding-top: 2em;
+    color: rgba(249,169,27,1);
+    font-size: 2em;
+}
+
+ input{
+    border:none;
+    background-color: rgba(249,169,27,1);
+    color: white;
+    padding-left: 0.5em;
+    
+}
+label{
+    margin-top: 3em;
+}
+
+.button, .return{
+    border-radius: 20px;
+    width: 100px;
+    background-color: rgba(247,39,28,1);
+    padding: 0;
+    border: solid 3px black;
+}
+.button, .return:hover{
+    cursor: pointer;
+}
+.return{
+    color: white;
+    position: relative;
+    bottom: -150px;
+    left: 10px;
+    display:block; 
+}
+
+
 
 
 

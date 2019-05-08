@@ -1225,7 +1225,7 @@ const battleship = {
         }
     },
 };                      
-
+//codigo do Ariel começa aqui!!!s
 $(play);
 function play(){
     $('nav').delay(500).slideDown(500);
@@ -1241,10 +1241,16 @@ function play(){
             // battleship.init( document.querySelector('#board1') ),
             // battleship.init1( document.querySelector('#board2') ),
             // battleship.start()
-        
-
-        
-       
-        
     });
+    
+    $('#aLogin').click(function(){
+        $('nav').slideUp(400,function(){
+            $('#divLogin').slideDown(400)
+        })
+    })
+    $('#aScore').click(function(){
+        $('nav').slideUp(400,function(){
+            $('#divScore').slideDown(400)
+        })
+    })
 }
