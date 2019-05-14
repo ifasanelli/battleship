@@ -96,8 +96,9 @@ const battleship = {
         this.container_element1.innerHTML = content1;
     },
 
-    level: function(){
-        this.nivel = prompt("Digite a dificuldade desejada:\n'f' para fácil\n'm' para médio\n'i' para impossível");
+    level: function(dificuldade){
+        this.nivel= dificuldade
+       
     },
 
     jogadas: function(position) {
@@ -1225,43 +1226,99 @@ const battleship = {
         }
     },
 };                      
-//codigo do Ariel começa aqui!!!s
-$(play);
-function play(){
-    $('nav').delay(500).slideDown(500);
-    $('#play').click(function(){
-        $('nav').fadeOut(400,function(){
-            $('main').slideDown(400,function(){
-                  battleship.init( document.querySelector('#board1') ),
-                  battleship.init1( document.querySelector('#board2') ),
-                  battleship.start()
-            })
-        });
+//codigo do Ariel começa aqui!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $(play);
+// function play(){
+//     $('nav').delay(500).slideDown(500);
+    // $('#play').click(function(){
+    //     $('nav').fadeOut(400,function(){
+    //         $('main').slideDown(400,function(){
+    //               battleship.init( document.querySelector('#board1') ),
+    //               battleship.init1( document.querySelector('#board2') ),
+    //               battleship.start()
+    //         })
+    //     });
         
             // battleship.init( document.querySelector('#board1') ),
             // battleship.init1( document.querySelector('#board2') ),
             // battleship.start()
-    });
+    // });
     
-    $('#aLogin').click(function(){
-        $('nav').slideUp(400,function(){
-            $('#divLogin').slideDown(400)
-        })
-    })
-    $('#aScore').click(function(){
-        $('nav').slideUp(400,function(){
-            $('#divScore').slideDown(400)
-        })
-    })
-     $('#aRegister').click(function(){
-        $('nav').slideUp(400,function(){
-            $('#divRegister').slideDown(400)
-        })
-    })
+    // seleao niveis
+    // level: function(){
+        
+    //     this.nivel = ;
+    // },
     
-    $(".return").click(function() {
-        $(this).parent("div").slideUp(400,function(){
-            $("nav").slideDown(400)
-        })
-    })
-}
+   
+    
+    // $('#play').click(function(){
+    //     $('nav').slideUp(400,function(){
+    //         $('#divDifficult').slideDown(400)
+    //     })
+    // })
+    
+    // $('.dif').click(function(){
+    //     $('nav').fadeOut(400,function(){
+    //         $('main').slideDown(400,function(){
+    //               battleship.init( document.querySelector('#board1') ),
+    //               battleship.init1( document.querySelector('#board2') ),
+    //               battleship.start()
+    //         })
+    //     });
+        
+    //         battleship.init( document.querySelector('#board1') ),
+    //         battleship.init1( document.querySelector('#board2') ),
+    //         battleship.start()
+    // })
+    
+//     $('#aLogin').click(function(){
+//         $('nav').slideUp(400,function(){
+//             $('#divLogin').slideDown(400)
+//         })
+//     })
+//     $('#aScore').click(function(){
+//         $('nav').slideUp(400,function(){
+//             $('#divScore').slideDown(400)
+//         })
+//     })
+//      $('#aRegister').click(function(){
+//         $('nav').slideUp(400,function(){
+//             $('#divRegister').slideDown(400)
+//         })
+//     })
+    
+//     $(".return").click(function() {
+//         $(this).parent("div").slideUp(400,function(){
+//             $("nav").slideDown(400)
+//         })
+//     })
+// }
+// código mira-->
+// $(main);
+// function main(){
+// $("main div").click(function(){
+//     var x = $(this).position();
+//   if(x.top>0){
+//     $("#aimH").animate( {top:"0px"});
+//     $("#aimV").animate( {left:"0px"});
+//     $("#aimH").animate( {top:x.top+50});
+//     $("#aimV").animate( {left:x.left+50});
+//     //alert("top="+x.top+"px "+"left ="+x.left+"px");
+//   }
+    
+// });}
