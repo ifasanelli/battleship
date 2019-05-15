@@ -64,6 +64,7 @@ main{
     padding-top: 2em;
     background-color: rgba(0,0,0,0.6);
     text-align: center;
+    display: none;
 }
 
 form{
@@ -90,8 +91,9 @@ label{
 
 .modals{
     text-align: center;
-    color: rgba(249,169,27,1);
     font-size: 2em;
+    display: none;
+    
 }
 
 .tableScore{
