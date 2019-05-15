@@ -96,9 +96,8 @@ const battleship = {
         this.container_element1.innerHTML = content1;
     },
 
-    level: function(dificuldade){
-        this.nivel= dificuldade
-       
+   level: function(){
+        this.nivel = prompt("Digite a dificuldade desejada:\n'f' para fácil\n'm' para médio\n'i' para impossível");
     },
 
     jogadas: function(position) {
@@ -1259,10 +1258,6 @@ const battleship = {
     // });
     
     // seleao niveis
-    // level: function(){
-        
-    //     this.nivel = ;
-    // },
     
    
     

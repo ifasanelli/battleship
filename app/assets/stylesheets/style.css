@@ -29,13 +29,12 @@ header{
     height: 100px;
 }
 
-nav, .modals{
+nav{
     margin: auto;
-    width: 45%;
-    height: 60vh;
+    width: 100%;
+    height: 20vh;
     background-color: rgba(0,0,0,0.6);
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 60px;
+    font-size: 3rem;
     padding-top: 1em;
 }
  li:nth-child(even){
@@ -43,12 +42,12 @@ nav, .modals{
  }
 li{
     list-style: none;
-    padding-top: 0.2em;
-    color:#f9a01b;
+ 
 }
 
 a:hover{
     cursor: pointer;
+    background-color: rgb(249,160,27);
 }
 
 a{
@@ -60,7 +59,7 @@ a{
 
 main{
     width: 100%;
-    height: 75vh;
+    height: auto;
     margin: auto;
     padding-top: 2em;
     background-color: rgba(0,0,0,0.6);
@@ -96,7 +95,7 @@ label{
 }
 
 .tableScore{
-    font-size: 0.8em;
+    font-size: 2em;
     color: white;
     font-family: 'Russo One', sans-serif;
     margin: auto;

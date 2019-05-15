@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get "/index" => "main#index"
   get "/cadastro" => "main#cadastro"
   get "/placar" => "main#placar"
+  get "/jogo" => "main#jogo"
+  get "/edit" => "main#edit"
 end
 
 #teste

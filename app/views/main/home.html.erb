@@ -17,48 +17,19 @@
             <nav>
                 <ul>
                     <li>
-                        <a id ="play">JOGAR</a>
-                    </li>
-                    <li>
-                        <a id="aLogin">ENTRAR</a>
-                    </li>
-                    <li>
-                        <a href='https://rails1-neuyer.c9users.io/cadastro' id="aRegister">CADASTRAR</a>
+                        <a href='https://rails1-neuyer.c9users.io/jogo' id ="play">JOGAR</a>
                     </li>
                     <li>
                         <a href='https://rails1-neuyer.c9users.io/placar' id="aScore">PLACAR</a>
                     </li>
+                     <li>
+                        <a href='https://rails1-neuyer.c9users.io/edit' id="aScore">EDIT-PERFIL</a>
+                    </li>
                 </ul>
             </nav>
         </header>
-        <div class='modals' id='divLogin'>
-            <button class="return">VOLTAR</button>
-            <form method= "post">
-                <label for="apelido">Apelido:</label><br>
-                <input type="text" name="apelido" placeholder ="apelido"/><br>
-                <label for="senha">Senha:</label><br>
-                <input type="password" name="senha" placeholder="senha"/><br>
-                <input class= "button" type="submit" value="ENTRAR"/>
-            </form>
-            
-        </div>
-        <div class='modals' id='divRegister'>
-            <button class="return">VOLTAR</button>
-            <form method= "post">
-                <label for="nome">Nome:</label><br>
-                <input type="text" name="nome" placeholder ="nome"/><br>
-                 <label for="nome">Apelido:</label><br>
-                <input type="text" name="apelido" placeholder ="apelido"/><br>
-                <label for="senha">Senha:</label><br>
-                <input type="password" name="senha" placeholder="senha"/><br>
-                <input type="password" name="confSenha" placeholder=" confirme senha"/><br>
-                <input class= "button" type="submit" value="entrar"/>
-            </form>
-            
-        </div>
-         <div class='modals' id='divScore'>
-              <button class="return">VOLTAR</button>
-              <table class="tableScore">
+        <main>
+         <table class="tableScore">
                   <thead>
                       <tr>
                           <th>
@@ -70,36 +41,12 @@
                       </tr>
                   </thead>
                   <tr>
-                      <td>-------</td>
-                      <td>-------</td>
-                  </tr>
-                  <tr>
-                      <td>--------</td>
-                      <td>-------</td>
-                  </tr>
-                  <tr>
-                      <td>--------</td>
-                      <td>-------</td>
-                  </tr>
-                  <tr>
-                      <td>-------</td>
-                      <td>-------</td>
+                      <td>Arnaldo</td>
+                      <td>1000pts</td>
                   </tr>
               </table>
-        </div>
-         <div class= "modals" id="divDifficult">
-                <h1>DIFICULDADE</h1>
-                    <ul>
-                        <li><a class="dif" id='easy' onclick="battleship.level(f)">FÁCIL</a></li>
-                        <li><a id= 'medium'>MÉDIO</a></li>
-                        <li><a id= 'hard'>IMPOSSÍVEL</a></li>
-                    </ul>
-            </div>
-        <main>
-            <div class='game' id='board1'></div>
-            <div class='game' id='board2'></div>
-        </main>
         
+       </main>
     </body>
     
 </html>
