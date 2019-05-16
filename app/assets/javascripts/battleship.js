@@ -1240,7 +1240,7 @@ const battleship = {
 
 
 
-// $(play);
+$(play);
 // function play(){
 //     $('nav').delay(500).slideDown(500);
     // $('#play').click(function(){
@@ -1259,27 +1259,24 @@ const battleship = {
     
     // seleao niveis
     
-   
+ function play(){
+    $('.modals').slideDown(400);
     
-    // $('#play').click(function(){
-    //     $('nav').slideUp(400,function(){
-    //         $('#divDifficult').slideDown(400)
-    //     })
-    // })
-    
-    // $('.dif').click(function(){
-    //     $('nav').fadeOut(400,function(){
-    //         $('main').slideDown(400,function(){
-    //               battleship.init( document.querySelector('#board1') ),
-    //               battleship.init1( document.querySelector('#board2') ),
-    //               battleship.start()
-    //         })
-    //     });
+    $('.dif').click(function(){
+        dif = '';
         
-    //         battleship.init( document.querySelector('#board1') ),
-    //         battleship.init1( document.querySelector('#board2') ),
-    //         battleship.start()
-    // })
+        dif = $(this).attr('id');
+            
+        
+        
+            battleship.init( document.querySelector('#board1') ),
+            battleship.init1( document.querySelector('#board2') ),
+            battleship.start()
+    })
+     
+ } 
+    
+    
     
 //     $('#aLogin').click(function(){
 //         $('nav').slideUp(400,function(){

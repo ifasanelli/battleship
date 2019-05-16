@@ -15,6 +15,13 @@
                 <img class="logotipo" src="assets/logotipo.png" alt="Logotipo"></img>
             </figure>
         </header>
+        <div class= 'modals'>
+            <ul>
+                <a class= 'dif' id= 'f'>FÁCIL</a>
+                <a class= 'dif' id= 'm'>MÉDIO</a> 
+                <a class= 'dif' id= 'i'>INSANO</a> 
+            </ul>
+        </div>
         <main>
             <div class='game' id='board1'></div>
             <div class='game' id='board2'></div>
@@ -24,9 +31,3 @@
     
 </html>
 
-<script>
-battleship.init( document.querySelector('#board1') );
-battleship.init1( document.querySelector('#board2') );
-battleship.start();
-
-</script>
