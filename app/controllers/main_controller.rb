@@ -1,5 +1,4 @@
-class MainController < ActionController::Base
-    def home
-        
-    end
+class MainController < ApplicationController
+  def index
+  end
 end

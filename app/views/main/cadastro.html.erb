@@ -17,17 +17,21 @@
         </header>
        
        <main>
-           <h1>CADASTRAR</h1>
-            <form method= "post">
-                <label for="nome">Nome:</label><br>
-                <input type="text" name="nome" placeholder ="nome"/><br>
-                 <label for="nome">Apelido:</label><br>
-                <input type="text" name="apelido" placeholder ="apelido"/><br>
-                <label for="senha">Senha:</label><br>
-                <input type="password" name="senha" placeholder="senha"/><br>
-                <input type="password" name="confSenha" placeholder=" confirme senha"/><br>
-                <input class= "button" type="submit" value="entrar"/>
-            </form>
+           <%= form_tag sessions_path do |form| %>
+  <div class=”field”>
+    <%= label_tag :email %>
+    <%= text_field_tag :email %>
+  </div>
+
+  <div class=”field”>
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+  </div>
+
+  <div class=”actions”>
+    <%= submit_tag 'Login' %>
+  </div>
+<% end %>
        </main>
            
         
