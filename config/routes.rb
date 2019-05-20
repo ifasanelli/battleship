@@ -13,8 +13,7 @@ Rails.application.routes.draw do
   get "/placar" => "main#placar"
   get "/jogo" => "main#jogo"
   get "/edit" => "main#edit"
-  
-  
+  root 'main#index'
   
   
  
