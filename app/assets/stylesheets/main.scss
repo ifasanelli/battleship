@@ -1,3 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+$cor-branca: #ffffff;
+$cor-vermelha: #b71d1a;
+$cor-amarela: #f9a01b;
+$font-russo: 'Russo One', sans-serif;
+ *{
+     margin: 0;
+     padding: 0;
+ }
+body{
+ max-width:1366px;
+ max-height:768px;
+ padding: 2px;
+ margin:0;
+ background-color: black;
+ background-image: url(bg.png);
+ background-position: top;
+ background-repeat:no-repeat;
+ background-size: 95%;
+ font-family: $font-russo;
+ color: $cor-branca;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.logotipo{
+    height: 100px;
+}
+
+nav{
+    margin: auto;
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(0,0,0,0.6);
+    font-size: 3rem;
+    padding-top: 1em;
+}
+ li:nth-child(even){
+     color: $cor-vermelha;
+ }
+li{
+    list-style: none;
+ 
+}
+
+a:hover{
+    cursor: pointer;
+    background-color: $cor-amarela;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+
+main{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 2em;
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+    
+}
+
+form{
+      width: 50%;
+      margin: auto;
+      border: 1px solid $cor-vermelha;
+      padding-top: 3rem;
+      padding-bottom: 4.5rem;
+      
+}
+
+    
+label{
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    display: block;
+    height: 10px;
+    width: 50%;
+    padding-left: 11rem;
+    text-align: left;
+}
+
+.modals{
+    text-align: center;
+    font-size: 2em;
+    display: none;
+    
+}
+
+.tableScore{
+    font-size: 2em;
+    color: white;
+    font-family: $font-russo;
+    margin: auto;
+    width: 50%;
+}
+
+.tableScore th,td{
+     border: 1px solid white;
+     padding: 0.5em;
+}
+
+input{
+    border:none;
+    background-color: $cor-amarela;
+    color: white;
+    padding-left: 0.5em;
+    
+}
+
+input:last-of-type{
+    margin-top: 2rem;
+}
+
+#divDifficult ul{
+    margin-top: 2rem;
+}
+.button, .return{
+    border-radius: 20px;
+    width: 100px;
+    background-color: $cor-amarela;
+    padding: 0;
+    border: solid 3px black;
+}
+.button, .return:hover{
+    cursor: pointer;
+}
+.return{
+    color: white;
+    display:block; 
+    margin-left: 1em;
+    margin-top: -0.5em;
+}
+.return, input{
+    font-family: $font-russo;
+}
+
+
+
+
+
+
+
+.game {
+    width:35%;
+    height: 500px;
+    margin-left:10%;
+    background-color: #34495e;
+    color: #fff;
+    border: 1px solid #2c3e50;
+    border-radius: 5px;
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+    float: left;
+    transform:rotateX(0deg);
+}
+  
+.game > div {
+    border: 1px solid #2c3e50;
+    border-radius: 1px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
