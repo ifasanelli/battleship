@@ -45,6 +45,36 @@ const battleship = {
     ctrl_dir8: 0,
     ctrl_dir9: 0,
     nivel: '',
+    aux: ['assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+          'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+          'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+          'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+          'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+          'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+          'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+          'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+          'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+          'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg'],
+    aux2: ['1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px',
+           '1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px',
+           '1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px',
+           '1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px',
+           '1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px',
+           '1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px',
+           '1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px',
+           '1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px',
+           '1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px',
+           '1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px','1px 1px 1px 1px'],
+    aux1: ['assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+           'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+           'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+           'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+           'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+           'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+           'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+           'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+           'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
+           'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg'],
 
     // FUNÇÕES
     init: function(container) {
@@ -71,9 +101,9 @@ const battleship = {
 
     hover_div: function(){
         $(".divs").hover(function(){ 
-            $(this).css("background-color", "yellow");
+            $(this).css("opacity", "0.7");
         }, function(){
-            $(this).css("background-color", "#34495e");
+            $(this).css("opacity", "1");
         }); 
     },
 
@@ -87,12 +117,12 @@ const battleship = {
         let content = '';
         let content1 = '';
         for ( i in this.board ) {
-            content += '<div class="divs" onclick="battleship.jogadas(' + i + ')">' + this.board[i] + '</div>';
+            content += '<div class="divs" onclick="battleship.jogadas(' + i + ');battleship.hover_div()" style="background-image: url('+this.aux1[i]+'); text-indent: -9999px; background-color: rgb(52, 73, 94); ">' + this.board[i] + '</div>';
         };
         this.container_element.innerHTML = content;
         for ( i in this.board2 ) {
-            content1 += '<div class="divs" onclick="battleship.jogadas(' + i + ')">' + this.board2[i] + '</div>';
-        };
+            content1 += '<div class="divs" id="div' + i + '" onclick="battleship.jogadas(' + i + ');battleship.hover_div()" style="background-image: url('+this.aux[i]+'); text-indent: -9999px; border-width: '+ this.aux2[i] +'; background-color: rgb(52, 73, 94); " >' + this.board2[i] + '</div>'; // style="background-color: #200487"
+        };  
         this.container_element1.innerHTML = content1;
     },
 
@@ -110,6 +140,7 @@ const battleship = {
                             if (this.board[position] == ''){
                                 //this.play_spl();
                                 this.board[position] = 'O';
+                                this.aux1[position] = "assets/navios/A16.jpg";
                                 this.draw();
                                 this.vez = true;
                                 this.jogadas();
@@ -117,6 +148,7 @@ const battleship = {
                             }else if(this.board[position] == ' ') {
                                 //this.play_exp();
                                 this.board[position] = 'X';
+                                this.aux1[position] = "assets/navios/A15.jpg";
                                 this.draw();
                                 this.vez = true;
                                 this.checka_vitoria();
@@ -156,11 +188,13 @@ const battleship = {
         var pos_bomb = Math.floor((Math.random() * 100));
         if (this.board2[pos_bomb] == 'N'){
             this.board2[pos_bomb] = 'X';
+            this.aux[pos_bomb] = "assets/navios/A15.jpg";
             this.vez = false;
             this.draw();
             this.checka_vitoria();
         }else if(this.board2[pos_bomb] == ''){
             this.board2[pos_bomb] = 'O';
+            this.aux[pos_bomb] = "assets/navios/A16.jpg";
             this.vez = false;
             this.draw();
         }else if (this.board2[pos_bomb] == 'X' || this.board2[pos_bomb] == 'O'){
@@ -175,6 +209,7 @@ const battleship = {
             var pos_bomb = Math.floor((Math.random() * 100));
             if (this.board2[pos_bomb] == 'N'){
                 this.board2[pos_bomb] = 'X';
+                this.aux[pos_bomb] = "assets/navios/A15.jpg";
                 this.vez = false;
                 this.draw();
                 this.checka_vitoria();
@@ -182,6 +217,7 @@ const battleship = {
                 this.temp_pos = pos_bomb;
             }else if(this.board2[pos_bomb] == ''){
                 this.board2[pos_bomb] = 'O';
+                this.aux[pos_bomb] = "assets/navios/A16.jpg";
                 this.vez = false;
                 this.draw();
             }else if (this.board2[pos_bomb] == 'X' || this.board2[pos_bomb] == 'O'){
@@ -196,6 +232,8 @@ const battleship = {
                     if (this.ctrl_dir1 == 0){   
                         if (this.board2[this.temp_pos+1] == 'N'){
                             this.board2[this.temp_pos+1] = 'X';
+                            this.aux[this.temp_pos+1] = "assets/navios/A15.jpg";
+                            // ?????????????
                             this.vez = false;
                             this.checka_vitoria();
                             this.temp_pos += 1;
@@ -210,6 +248,7 @@ const battleship = {
                     }else if (this.ctrl_dir1 == 1){
                         if (this.board2[this.temp_pos-1] == 'N'){
                             this.board2[this.temp_pos-1] = 'X';
+                            this.aux[this.temp_pos-1] = "assets/navios/A15.jpg";
                             this.vez = false;
                             this.draw();
                             this.checka_vitoria();
@@ -224,6 +263,7 @@ const battleship = {
                     }else if (this.ctrl_dir1 == 2){
                         if (this.board2[this.temp_pos+10] == 'N'){
                             this.board2[this.temp_pos+10] = 'X';
+                            this.aux[this.temp_pos+10] = "assets/navios/A15.jpg";
                             this.vez = false;
                             this.draw();
                             this.checka_vitoria();
@@ -243,6 +283,7 @@ const battleship = {
                         if (this.ctrl_dir2 == 0){    
                             if (this.board2[this.temp_pos-10] == 'N'){
                                 this.board2[this.temp_pos-10] = 'X';
+                                this.aux[this.temp_pos-10] = "assets/navios/A15.jpg";
                                 this.vez = false;
                                 this.draw();
                                 this.checka_vitoria();
@@ -257,6 +298,7 @@ const battleship = {
                         }else if (this.ctrl_dir2 == 1){
                             if (this.board2[this.temp_pos-1] == 'N'){
                                 this.board2[this.temp_pos-1] = 'X';
+                                this.aux[this.temp_pos-1] = "assets/navios/A15.jpg";
                                 this.vez = false;
                                 this.draw();
                                 this.checka_vitoria();
@@ -271,6 +313,7 @@ const battleship = {
                         }else if (this.ctrl_dir2 == 2){
                             if (this.board2[this.temp_pos+10] == 'N'){
                                 this.board2[this.temp_pos+10] = 'X';
+                                this.aux[this.temp_pos+10] = "assets/navios/A15.jpg";
                                 this.vez = false;
                                 this.draw();
                                 this.checka_vitoria();
@@ -290,6 +333,7 @@ const battleship = {
                         if (this.ctrl_dir3 == 0){    
                             if (this.board2[this.temp_pos-1] == 'N'){
                                 this.board2[this.temp_pos-1] = 'X';
+                                this.aux[this.temp_pos-1] = "assets/navios/A15.jpg";
                                 this.vez = false;
                                 this.draw();
                                 this.checka_vitoria();
@@ -304,6 +348,7 @@ const battleship = {
                         }else if (this.ctrl_dir3 == 1){
                             if (this.board2[this.temp_pos-10] == 'N'){
                                 this.board2[this.temp_pos-10] = 'X';
+                                this.aux[this.temp_pos-10] = "assets/navios/A15.jpg";
                                 this.vez = false;
                                 this.draw();
                                 this.checka_vitoria();
@@ -318,6 +363,7 @@ const battleship = {
                         }else if (this.ctrl_dir3 == 2){
                             if (this.board2[this.temp_pos+1] == 'N'){
                                 this.board2[this.temp_pos+1] = 'X';
+                                this.aux[this.temp_pos+1] = "assets/navios/A15.jpg";
                                 this.vez = false;
                                 this.draw();
                                 this.checka_vitoria();
@@ -337,6 +383,7 @@ const battleship = {
                         if (this.ctrl_dir4 == 0){    
                             if (this.board2[this.temp_pos-10] == 'N'){
                                 this.board2[this.temp_pos-10] = 'X';
+                                this.aux[this.temp_pos-10] = "assets/navios/A15.jpg";
                                 this.vez = false;
                                 this.draw();
                                 this.checka_vitoria();
@@ -351,6 +398,7 @@ const battleship = {
                         }else if (this.ctrl_dir4 == 1){
                             if (this.board2[this.temp_pos+10] == 'N'){
                                 this.board2[this.temp_pos+10] = 'X';
+                                this.aux[this.temp_pos+10] = "assets/navios/A15.jpg";
                                 this.vez = false;
                                 this.draw();
                                 this.checka_vitoria();
@@ -365,6 +413,7 @@ const battleship = {
                         }else if (this.ctrl_dir4 == 2){
                             if (this.board2[this.temp_pos+1] == 'N'){
                                 this.board2[this.temp_pos+1] = 'X';
+                                this.aux[this.temp_pos+1] = "assets/navios/A15.jpg";
                                 this.vez = false;
                                 this.draw();
                                 this.checka_vitoria();
@@ -382,6 +431,7 @@ const battleship = {
                 if (this.ctrl_dir5 == 0){    
                     if (this.board2[this.temp_pos+10] == 'N'){
                         this.board2[this.temp_pos+10] = 'X';
+                        this.aux[this.temp_pos+10] = "assets/navios/A15.jpg";
                         this.vez = false;
                         this.draw();
                         this.checka_vitoria();
@@ -396,6 +446,7 @@ const battleship = {
                 }else if (this.ctrl_dir5 == 1){
                     if (this.board2[this.temp_pos+1] == 'N'){
                         this.board2[this.temp_pos+1] = 'X';
+                        this.aux[this.temp_pos+1] = "assets/navios/A15.jpg";
                         this.vez = false;
                         this.draw();
                         this.checka_vitoria();
@@ -413,6 +464,7 @@ const battleship = {
                 if (this.ctrl_dir6 == 0){    
                     if (this.board2[this.temp_pos+10] == 'N'){
                         this.board2[this.temp_pos+10] = 'X';
+                        this.aux[this.temp_pos+10] = "assets/navios/A15.jpg";
                         this.vez = false;
                         this.draw();
                         this.checka_vitoria();
@@ -427,6 +479,7 @@ const battleship = {
                 }else if (this.ctrl_dir6 == 1){
                     if (this.board2[this.temp_pos-1] == 'N'){
                         this.board2[this.temp_pos-1] = 'X';
+                        this.aux[this.temp_pos-1] = "assets/navios/A15.jpg";
                         this.vez = false;
                         this.draw();
                         this.checka_vitoria();
@@ -444,6 +497,7 @@ const battleship = {
                 if (this.ctrl_dir7 == 0){    
                     if (this.board2[this.temp_pos-10] == 'N'){
                         this.board2[this.temp_pos-10] = 'X';
+                        this.aux[this.temp_pos-10] = "assets/navios/A15.jpg";
                         this.vez = false;
                         this.draw();
                         this.checka_vitoria();
@@ -458,6 +512,7 @@ const battleship = {
                 }else if (this.ctrl_dir7 == 1){
                     if (this.board2[this.temp_pos-1] == 'N'){
                         this.board2[this.temp_pos-1] = 'X';
+                        this.aux[this.temp_pos-1] = "assets/navios/A15.jpg";
                         this.vez = false;
                         this.draw();
                         this.checka_vitoria();
@@ -475,6 +530,7 @@ const battleship = {
                 if (this.ctrl_dir8 == 0){    
                     if (this.board2[this.temp_pos-10] == 'N'){
                         this.board2[this.temp_pos-10] = 'X';
+                        this.aux[this.temp_pos-10] = "assets/navios/A15.jpg";
                         this.vez = false;
                         this.draw();
                         this.checka_vitoria();
@@ -489,6 +545,7 @@ const battleship = {
                 }else if (this.ctrl_dir8 == 1){
                     if (this.board2[this.temp_pos+1] == 'N'){
                         this.board2[this.temp_pos+1] = 'X';
+                        this.aux[this.temp_pos+1] = "assets/navios/A15.jpg";
                         this.vez = false;
                         this.draw();
                         this.checka_vitoria();
@@ -506,6 +563,7 @@ const battleship = {
                 if (this.ctrl_dir9 == 0){   
                     if (this.board2[this.temp_pos-10] == 'N'){
                         this.board2[this.temp_pos-10] = 'X';
+                        this.aux[this.temp_pos-10] = "assets/navios/A15.jpg";
                         this.vez = false;
                         this.draw();
                         this.checka_vitoria();
@@ -520,6 +578,7 @@ const battleship = {
                 }else if (this.ctrl_dir9 == 1){
                     if (this.board2[this.temp_pos+10] == 'N'){
                         this.board2[this.temp_pos+10] = 'X';
+                        this.aux[this.temp_pos+10] = "assets/navios/A15.jpg";
                         this.vez = false;
                         this.draw();
                         this.checka_vitoria();
@@ -534,6 +593,7 @@ const battleship = {
                 }else if (this.ctrl_dir9 == 2){
                     if (this.board2[this.temp_pos+1] == 'N'){
                         this.board2[this.temp_pos+1] = 'X';
+                        this.aux[this.temp_pos+1] = "assets/navios/A15.jpg";
                         this.vez = false;
                         this.draw();
                         this.checka_vitoria();
@@ -548,6 +608,7 @@ const battleship = {
                 }else if (this.ctrl_dir9 == 3){
                     if (this.board2[this.temp_pos-1] == 'N'){
                         this.board2[this.temp_pos-1] = 'X';
+                        this.aux[this.temp_pos-1] = "assets/navios/A15.jpg";
                         this.vez = false;
                         this.draw();
                         this.checka_vitoria();
@@ -569,6 +630,7 @@ const battleship = {
         for ( i in this.board2 ) {
             if (this.board2[i] == 'N'){
                 this.board2[i] = 'X';
+                this.aux[i] = "assets/navios/A15.jpg";
                 this.vez = false;
                 this.draw();
                 this.checka_vitoria();
@@ -606,10 +668,19 @@ const battleship = {
                             this.board2[position+20] = 'N';
                             this.board2[position+30] = 'N';
                             this.board2[position+40] = 'N';
+                            this.aux[position] = "assets/navios/A17.jpg";
+                            this.aux[position+10] = "assets/navios/A18.jpg";
+                            this.aux[position+20] = "assets/navios/A19.jpg";
+                            this.aux[position+30] = "assets/navios/A20.jpg";
+                            this.aux[position+40] = "assets/navios/A21.jpg";
+                            this.aux2[position] = "1px 1px 0px 1px";
+                            this.aux2[position+10] = "0px 1px 0px 1px";
+                            this.aux2[position+20] = "0px 1px 0px 1px";
+                            this.aux2[position+30] = "0px 1px 0px 1px";
+                            this.aux2[position+40] = "0px 1px 1px 1px";
                             this.draw();
                             //alert('Navio posicionado!');
                             this.cnt += 1;
-                            this.hover_div();
                         }
                     }
                 }else if(orient == 'h' || orient == 'H'){
@@ -637,16 +708,26 @@ const battleship = {
                             this.board2[position+2] = 'N';
                             this.board2[position+3] = 'N';
                             this.board2[position+4] = 'N';
+                            this.aux[position] = "assets/navios/A1.jpg";
+                            this.aux[position+1] = "assets/navios/A2.jpg";
+                            this.aux[position+2] = "assets/navios/A3.jpg";
+                            this.aux[position+3] = "assets/navios/A4.jpg";
+                            this.aux[position+4] = "assets/navios/A5.jpg";
+                            this.aux2[position] = "1px 0px 1px 1px";
+                            this.aux2[position+1] = "1px 0px 1px 0px";
+                            this.aux2[position+2] = "1px 0px 1px 0px";
+                            this.aux2[position+3] = "1px 0px 1px 0px";
+                            this.aux2[position+4] = "1px 1px 1px 0px";
                             this.draw();
                             //alert('Navio posicionado!');
                             this.cnt += 1;
-                            this.hover_div();
                         }
                     }
                 }else{
                     alert('Valor inválido!!!\nClique no primeiro tabuleiro para posicionar seus navios');
                 }
             }else if(this.cnt == 1){
+                //alert(this.board2);
                 if (orient == 'v' || orient == 'V'){
                     if (position == 70 || position == 80 || position == 90 ||
                         position == 71 || position == 81 || position == 91 ||
@@ -670,10 +751,17 @@ const battleship = {
                             this.board2[position+10] = 'N';
                             this.board2[position+20] = 'N';
                             this.board2[position+30] = 'N';
+                            this.aux[position] = "assets/navios/A22.jpg";
+                            this.aux[position+10] = "assets/navios/A23.jpg";
+                            this.aux[position+20] = "assets/navios/A24.jpg";
+                            this.aux[position+30] = "assets/navios/A25.jpg";
+                            this.aux2[position] = "1px 1px 0px 1px";
+                            this.aux2[position+10] = "0px 1px 0px 1px";
+                            this.aux2[position+20] = "0px 1px 0px 1px";
+                            this.aux2[position+30] = "0px 1px 1px 1px";
                             this.draw();
                             //alert('Navio posicionado!');
                             this.cnt += 1;
-                            this.hover_div();
                         }
                     }
                 }else if(orient == 'h' || orient == 'H'){
@@ -699,10 +787,17 @@ const battleship = {
                             this.board2[position+1] = 'N';
                             this.board2[position+2] = 'N';
                             this.board2[position+3] = 'N';
+                            this.aux[position] = "assets/navios/A6.jpg";
+                            this.aux[position+1] = "assets/navios/A7.jpg";
+                            this.aux[position+2] = "assets/navios/A8.jpg";
+                            this.aux[position+3] = "assets/navios/A9.jpg";
+                            this.aux2[position] = "1px 0px 1px 1px";
+                            this.aux2[position+1] = "1px 0px 1px 0px";
+                            this.aux2[position+2] = "1px 0px 1px 0px";
+                            this.aux2[position+3] = "1px 1px 1px 0px";
                             this.draw();
                             //alert('Navio posicionado!');
                             this.cnt += 1;
-                            this.hover_div();
                         }
                     }
                 }else{
@@ -730,10 +825,15 @@ const battleship = {
                             this.board2[position] = 'N';
                             this.board2[position+10] = 'N';
                             this.board2[position+20] = 'N';
+                            this.aux[position] = "assets/navios/A26.jpg";
+                            this.aux[position+10] = "assets/navios/A27.jpg";
+                            this.aux[position+20] = "assets/navios/A28.jpg";
+                            this.aux2[position] = "1px 1px 0px 1px";
+                            this.aux2[position+10] = "0px 1px 0px 1px";
+                            this.aux2[position+20] = "0px 1px 1px 1px";
                             this.draw();
                             //alert('Navio posicionado!');
                             this.cnt += 1;
-                            this.hover_div();
                         }
                     }
                 }else if(orient == 'h' || orient == 'H'){
@@ -757,10 +857,15 @@ const battleship = {
                             this.board2[position] = 'N';
                             this.board2[position+1] = 'N';
                             this.board2[position+2] = 'N';
+                            this.aux[position] = "assets/navios/A10.jpg";
+                            this.aux[position+1] = "assets/navios/A11.jpg";
+                            this.aux[position+2] = "assets/navios/A12.jpg";
+                            this.aux2[position] = "1px 0px 1px 1px";
+                            this.aux2[position+1] = "1px 0px 1px 0px";
+                            this.aux2[position+2] = "1px 1px 1px 0px";
                             this.draw();
                             //alert('Navio posicionado!');
                             this.cnt += 1;
-                            this.hover_div();
                         }
                     }
                 }else{
@@ -786,10 +891,13 @@ const battleship = {
                         }else{
                             this.board2[position] = 'N';
                             this.board2[position+10] = 'N';
+                            this.aux[position] = "assets/navios/A29.jpg";
+                            this.aux[position+10] = "assets/navios/A30.jpg";
+                            this.aux2[position] = "1px 1px 0px 1px";
+                            this.aux2[position+10] = "0px 1px 1px 1px";
                             this.draw();
                             //alert('Navio posicionado!');
                             this.cnt += 1;
-                            this.hover_div();
                         }
                     }
                 }else if(orient == 'h' || orient == 'H'){
@@ -811,10 +919,13 @@ const battleship = {
                         }else{
                             this.board2[position] = 'N';
                             this.board2[position+1] = 'N';
+                            this.aux[position] = "assets/navios/A13.jpg";
+                            this.aux[position+1] = "assets/navios/A14.jpg";
+                            this.aux2[position] = "1px 0px 1px 1px";
+                            this.aux2[position+1] = "1px 1px 1px 0px";
                             this.draw();
                             //alert('Navio posicionado!');
                             this.cnt += 1;
-                            this.hover_div();
                         }
                     }
                 }else{
@@ -840,6 +951,10 @@ const battleship = {
                         }else{
                             this.board2[position] = 'N';
                             this.board2[position+10] = 'N';
+                            this.aux[position] = "assets/navios/A29.jpg";
+                            this.aux[position+10] = "assets/navios/A30.jpg";
+                            this.aux2[position] = "1px 1px 0px 1px";
+                            this.aux2[position+10] = "0px 1px 1px 1px";
                             //alert('Navio posicionado!');
                             this.cnt += 1;
                             this.draw();
@@ -865,6 +980,10 @@ const battleship = {
                             this.board2[position] = 'N';
                             this.board2[position+1] = 'N';
                             //alert('Navio posicionado!');
+                            this.aux[position] = "assets/navios/A13.jpg";
+                            this.aux[position+1] = "assets/navios/A14.jpg";
+                            this.aux2[position] = "1px 0px 1px 1px";
+                            this.aux2[position+1] = "1px 1px 1px 0px";
                             this.cnt += 1;
                             this.draw();
                         }
