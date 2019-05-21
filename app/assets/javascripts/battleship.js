@@ -1,4 +1,4 @@
-// BATTLESHIP
+//BATTLESHIP
 const battleship = {
 
     // ATRIBUTOS

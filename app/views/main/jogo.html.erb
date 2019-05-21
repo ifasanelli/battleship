@@ -5,7 +5,6 @@
         <meta charset="utf-8">
         <title>Battleship</title>
         <link rel="icon" href="assets/bomb.ico">
-        <script type="text/javascript" src="assets/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="assets/battleship.js"></script>
     </head>
     <body>
@@ -14,22 +13,25 @@
                 <img class="logotipo" src="assets/logotipo.png" alt="Logotipo"></img>
             </figure>
         </header>
+        <main>
+        <h2>ESCOLHA A DIFICULDADE:</h2>
         <div class= 'modals'>
-            <ul>
-                <a class= 'dif' id= 'f'>FÁCIL</a>
-                <a class= 'dif' id= 'm'>MÉDIO</a> 
-                <a class= 'dif' id= 'i'>INSANO</a> 
+            <ul class= "dif-list">
+                <li><a class= 'dif' id= 'f'>FÁCIL</a></li>
+                <li><a class= 'dif' id= 'm'>MÉDIO</a> </li>
+                <li><a class= 'dif' id= 'i'>INSANO</a></li>
             </ul>
         </div>
-        <main>
-            <div class='game' id='board1'></div>
-            <div class='game' id='board2'></div>
         </main>
-        <script>
-            battleship.init( document.querySelector('#board1') );
-            battleship.init1( document.querySelector('#board2') );
-            battleship.start();
-        </script>
+        <!--<main>-->
+        <!--    <div class='game' id='board1'></div>-->
+        <!--    <div class='game' id='board2'></div>-->
+        <!--</main>-->
+        <!--<script>-->
+        <!--    battleship.init( document.querySelector('#board1') );-->
+        <!--    battleship.init1( document.querySelector('#board2') );-->
+        <!--    battleship.start();-->
+        <!--</script>-->
         
     </body>
     
