@@ -1347,19 +1347,6 @@ const battleship = {
 //codigo do Ariel começa aqui!!!
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-$(play);
 // function play(){
 //     $('nav').delay(500).slideDown(500);
     // $('#play').click(function(){
@@ -1377,24 +1364,6 @@ $(play);
     // });
     
     // seleao niveis
-    
- function play(){
-    $('.modals').slideDown(400);
-    
-    $('.dif').click(function(){
-        dif = '';
-        
-        dif = $(this).attr('id');
-            
-        
-        
-            battleship.init( document.querySelector('#board1') ),
-            battleship.init1( document.querySelector('#board2') ),
-            battleship.start()
-    })
-     
- } 
-    
     
     
 //     $('#aLogin').click(function(){
