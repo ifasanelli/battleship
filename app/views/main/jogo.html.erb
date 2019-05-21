@@ -17,9 +17,9 @@
         <h2>ESCOLHA A DIFICULDADE:</h2>
         <div class= 'modals'>
             <ul class= "dif-list">
-                <li><a class= 'dif' id= 'f'>FÁCIL</a></li>
-                <li><a class= 'dif' id= 'm'>MÉDIO</a> </li>
-                <li><a class= 'dif' id= 'i'>INSANO</a></li>
+                <li><a class= 'dif' id= 'f' onclick="battleship.level1();battleship.init( document.querySelector('#board1') );battleship.init1( document.querySelector('#board2') );battleship.start();">FÁCIL</a></li>
+                <li><a class= 'dif' id= 'm' onclick="battleship.level2();battleship.init( document.querySelector('#board1') );battleship.init1( document.querySelector('#board2') );battleship.start();">MÉDIO</a> </li>
+                <li><a class= 'dif' id= 'i' onclick="battleship.level3();battleship.init( document.querySelector('#board1') );battleship.init1( document.querySelector('#board2') );battleship.start();">INSANO</a></li>
             </ul>
         </div>
             <div class='game' id='board1'></div>

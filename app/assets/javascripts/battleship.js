@@ -89,14 +89,8 @@ const battleship = {
         //this.board.fill('');
         this.draw();
         this.gameover = false;
-        this.level();
-        if (this.nivel == 'f' || this.nivel == 'F' || this.nivel == 'm' || 
-            this.nivel == 'M' || this.nivel == 'i' ||this.nivel == 'I' ){
-                alert("Clique no segundo tabuleiro para posicionar seus navios"); 
-                this.hover_div();
-        }else{
-            this.start();
-        } 
+        alert("Clique no segundo tabuleiro para posicionar seus navios"); 
+        this.hover_div();
     },
 
     hover_div: function(){
@@ -125,9 +119,17 @@ const battleship = {
         };  
         this.container_element1.innerHTML = content1;
     },
-
-   level: function(){
-        this.nivel = prompt("Digite a dificuldade desejada:\n'f' para fácil\n'm' para médio\n'i' para impossível");
+    
+    level1: function(){
+        this.nivel = "f";
+    },
+    
+    level2: function(){
+        this.nivel = "m";
+    },
+    
+    level3: function(){
+        this.nivel = "i";
     },
 
     jogadas: function(position) {
