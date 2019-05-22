@@ -6,10 +6,9 @@ class SessionsController < ApplicationController
     user = User.find_by_email(params[:email])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to '/home', notice: "Logged in!"
+      redirect_to '/home', notice: "Logado com sucesso!"
     else
-      flash.now[:alert] = "Email ou senha invalido"
-      render "new"
+      redirect_to '/index', notice: "Email ou senha invalido"
     end
   end
 

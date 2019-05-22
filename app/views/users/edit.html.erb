@@ -1,6 +1,35 @@
-<h1>Editing User</h1>
 
-<%= render 'form', user: @user %>
 
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Battleship</title>
+        <link rel="icon" href="assets/bomb.ico">
+        <script type="text/javascript" src="assets/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="assets/battleship.js"></script>
+    </head>
+    <body>
+        <header>
+             <figure>
+                <img class="logotipo" src="assets/logotipo.png" alt="Logotipo"></img>
+            </figure>
+        </header>
+       
+       <main>
+        <h1>Editar Perfil</h1>
+        <%= render 'formedit', user: @user %>
+        <%= link_to 'Show', @user %> |
+        <%= link_to 'Back', users_path %>
+
+
+       </main>
+           
+        
+    </body>
+    
+</html>
+
+
+
+

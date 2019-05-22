@@ -2,24 +2,23 @@
 
 
 <html lang="pt-br" dir="ltr">
-    <head>
+  <head>
         <meta charset="utf-8">
-        <title>Battleship/placar</title>
+        <title>Battleship</title>
         <link rel="icon" href="assets/bomb.ico">
         <script type="text/javascript" src="assets/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="assets/battleship.js"></script>
         <link rel="stylesheet" href="assets/style.css" type="text/css" />
-    </head>
-    <body>
-        <header>
-             <figure>
-                <img class="logotipo" src="assets/logotipo.png" alt="Logotipo"></img>
-            </figure>
-        </header>
+  </head>
+  <body>
+      <header>
+        <figure>
+          <img class="logotipo" src="assets/logotipo.png" alt="Logotipo"></img>
+        </figure>
+      </header>
        
-       <main>
+      <main>
            <h1>Login</h1>
-
 <%= form_tag sessions_path do |form| %>
   <div class=”field”>
     <%= label_tag :Email %>
@@ -35,21 +34,7 @@
     <%= submit_tag 'Login' %>
   </div>
 <% end %>
+      </main>
+  </body>
 
-<!DOCTYPE html>
-
-             <a href='/users/new' id="aRegister">CADASTRAR?</a>
-             
-       </main>
-           
-        
-    </body>
-    
-</html>
-
-<script>
-//battleship.init( document.querySelector('#board1') );
-//battleship.init1( document.querySelector('#board2') );
-//battleship.start();
-
-</script>
+<a href='/users/new' id="aRegister">CADASTRAR?</a>

@@ -3,16 +3,15 @@ Rails.application.routes.draw do
   get 'sessions/create'
   get 'sessions/destroy'
   resources :users
-  #get 'main/index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
+ 
   get "/home" => "main#home"
   get "/index" => "main#index"
-  #get "/cadastro" => "main#cadastro"
+
   get "/placar" => "main#placar"
   get "/jogo" => "main#jogo"
-  get "/edit" => "main#edit"
+  get "/edit" => "users#edit"
   root 'main#index'
-  
   
  
   resources :sessions, only: [:new, :create, :destroy]
@@ -24,4 +23,3 @@ Rails.application.routes.draw do
   
 end
 
-#teste

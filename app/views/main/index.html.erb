@@ -5,7 +5,7 @@
     
     <head>
         <meta charset="utf-8">
-        <title>Battleship/placar</title>
+        <title>Battleship</title>
         <link rel="icon" href="assets/bomb.ico">
         <script type="text/javascript" src="assets/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="assets/battleship.js"></script>
@@ -18,28 +18,31 @@
             </figure>
         </header>
        
-       <main>
-           <h1>Login</h1>
+        <main>
+            <h1>Login</h1>
+           
+            <%= form_tag sessions_path do |form| %>
+            
+            <p id="notice"><%= notice %></p> 
+            <div class=”field”>
+                <%= label_tag :Email %>
+                <%= text_field_tag :email %>
+            </div>
 
-<%= form_tag sessions_path do |form| %>
-  <div class=”field”>
-    <%= label_tag :Email %>
-    <%= text_field_tag :email %>
-  </div>
+            <div class=”field”>
+                <%= label_tag :Senha %>
+                <%= password_field_tag :password %>
+            </div>
 
-  <div class=”field”>
-    <%= label_tag :Senha %>
-    <%= password_field_tag :password %>
-  </div>
+            <div class=”actions”>
+               <%= submit_tag 'Login' %>
+            </div>
+            
+            <% end %>
 
-  <div class=”actions”>
-    <%= submit_tag 'Login' %>
-  </div>
-<% end %>
 
-<!DOCTYPE html>
 
-             <a href='/users/new' id="aRegister">CADASTRAR?</a>
+<a href='/signup' id="aRegister">CADASTRAR?</a>
              
        </main>
            

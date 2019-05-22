@@ -10,10 +10,16 @@
     </head>
     <body>
         <header>
+           
             <figure>
                 <img class="logotipo" src="assets/logotipo.png" alt="Logotipo"></img>
             </figure>
-            <nav>
+           <div>
+           <p id="notice"><%= notice %></p>  <!--mensagem de bem vindo-->
+           <p><%= @user %></p>
+           <p>Bem vindo <%= @user_nome %> </p>
+           </div>
+             <nav>
                 <ul>
                     <li>
                         <a href='/jogo' id ="play">JOGAR</a>
@@ -22,7 +28,7 @@
                         <a href='/placar' id="aScore">PLACAR</a>
                     </li>
                      <li>
-                        <a href='/edit' id="aScore">EDIT-PERFIL</a>
+                        <a href='/edit' id="aScore">EDITAR  PERFIL</a>
                     </li>
                 </ul>
             </nav>
@@ -46,13 +52,9 @@
               </table>
         
        </main>
+       
     </body>
     
 </html>
 
-<script>
-//battleship.init( document.querySelector('#board1') );
-//battleship.init1( document.querySelector('#board2') );
-//battleship.start();
 
-</script>
