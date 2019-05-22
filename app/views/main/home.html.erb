@@ -16,8 +16,7 @@
             </figure>
            <div>
            <p id="notice"><%= notice %></p>  <!--mensagem de bem vindo-->
-           <p><%= @user %></p>
-           <p>Bem vindo <%= @user_nome %> </p>
+           <p>Bem vindo <%= current_user.nome %> </p>
            </div>
              <nav>
                 <ul>
@@ -28,7 +27,7 @@
                         <a href='/placar' id="aScore">PLACAR</a>
                     </li>
                      <li>
-                        <a href='/edit' id="aScore">EDITAR  PERFIL</a>
+                        <a href='/edit' id="aScore">EDITAR PERFIL</a>
                     </li>
                 </ul>
             </nav>
@@ -52,9 +51,7 @@
               </table>
         
        </main>
-       
+       <%= link_to "Log out", logout_path %>
     </body>
     
 </html>
-
-

@@ -13,8 +13,9 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    session[:user_id] = nil
-    redirect_to root_url, notice: "Logged out!"
+    session.delete(:user_id)
+    @current_user = nil
+    redirect_to '/index', notice: "Deslogado!"
   end
 
 end
