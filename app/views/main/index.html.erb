@@ -7,19 +7,17 @@
         <meta charset="utf-8">
         <title>Battleship</title>
         <link rel="icon" href="assets/bomb.ico">
-        <script type="text/javascript" src="assets/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="assets/battleship.js"></script>
-       
     </head>
     <body>
         <header>
              <figure>
                 <img class="logotipo" src="assets/logotipo.png" alt="Logotipo"></img>
             </figure>
+            <h1>ENTRAR</h1>
         </header>
        
         <main>
-            <h1>Login</h1>
            
             <%= form_tag sessions_path do |form| %>
             <p id="notice"><%= notice %></p> 
@@ -33,16 +31,13 @@
                 <%= password_field_tag :password %>
             </div>
 
-            <div class=”actions”>
+            <div class='actions'>
                <%= submit_tag 'Login' %>
             </div>
+            <br>
+            <a href='/signup' id="aRegister">CADASTRAR?</a>
             
             <% end %>
-
-
-
-        <a href='/signup' id="aRegister">CADASTRAR?</a>
-             
        </main>
            
         

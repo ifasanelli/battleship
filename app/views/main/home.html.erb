@@ -18,6 +18,7 @@
            <p id="notice"><%= notice %></p>  <!--mensagem de bem vindo-->
            <h1>Bem vindo <%= current_user.nome.capitalize %> </h1>
            </div>
+        </header>
              <nav>
                   <ul>
                     <li>
@@ -50,7 +51,6 @@
                <button class= "home-logout"><%= link_to "SAIR", logout_path %></button>
               </div>  
             </nav>
-        </header>
     </body>
     
 </html>

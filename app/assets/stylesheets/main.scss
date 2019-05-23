@@ -10,7 +10,7 @@ $font-russo: 'Russo One', sans-serif;
      padding: 0.2rem;
  }
 body{
- max-height:768px;
+ max-height:758px;
  padding: 2rem;
  margin:0;
  background-color: black;
@@ -27,6 +27,7 @@ header{
     width: 100%;
     height: auto;
     text-align: center;
+    background-color: black;
 }
 
 .logotipo{
@@ -73,11 +74,13 @@ li:nth-child(1){
     color: white;
     font-family: $font-russo;
     width: 100%;
+    border: 2px solid $cor-vermelha;
 }
 
 .tableScore th, td{
      border: 1px solid white;
      padding: 0.5em;
+     text-align: left;
 }
 
 
@@ -85,6 +88,7 @@ li:hover, .home-logout:hover{
     background-color: $cor-vermelha;
     color: $cor-amarela;
 }
+
 a:hover{
     cursor: pointer;
 }
@@ -92,7 +96,21 @@ a:hover{
 a{
     text-decoration: none;
     color: inherit;
+    width:100%;
+    display: block;
+    text-align: center;
     
+}
+
+.actions{
+    input:hover{
+        cursor: pointer;
+        background-color: $cor-vermelha;
+        color: $cor-amarela;
+    }
+    input{
+        width: 15%;
+    }
 }
 
 .home-logout{
@@ -112,7 +130,7 @@ main{
     width: 100%;
     height: auto;
     margin: auto;
-    padding-top: 2em;
+    padding: 1rem;
     background-color: rgba(0,0,0,0.6);
     text-align: center;
     display:none;    
@@ -123,9 +141,24 @@ form{
       width: 50%;
       margin: auto;
       border: 1px solid $cor-vermelha;
-      padding-top: 3rem;
-      padding-bottom: 4.5rem;
-      
+      padding: 1rem;
+}
+
+.container-form-edit{
+    display: flex;
+    width: 100%;
+}
+
+.container-form-edit{
+    .containerb-form-edit{
+        margin: auto;
+        width: 50%;
+        text-align: left;
+    }
+    label{
+        padding-left: 0;
+        width: 100%;
+    }
 }
 
     

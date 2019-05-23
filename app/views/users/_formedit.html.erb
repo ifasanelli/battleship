@@ -1,27 +1,32 @@
 <%= form_with(model: user, local: true) do |form| %>
-
-  <div class="field">
-    <%= form.label :nome %>
-    <%= form.text_field :nome %>
-  </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Senha %>
-    <%= form.password_field :password %>
-  
-  </div>
-  
-  <div class="field">
-    <%= form.label :Confirme_a_Senha %>
-    <%= form.password_field :password_confirmation %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit "Editar" %>
-  </div>
+  <div class= 'container-form-edit'>
+    <div class= 'containerb-form-edit'>
+       <div class="field">
+          <%= form.label :nome %>
+          <%= form.text_field :nome %>
+        </div>
+      
+        <div class="field">
+          <%= form.label :email %>
+          <%= form.text_field :email %>
+        </div>
+      
+    </div>
+    
+    <div class= 'containerb-form-edit'>
+      <div class="field">
+          <%= form.label :Senha %>
+          <%= form.password_field :password %>
+        
+        </div>
+        
+        <div class="field">
+          <%= form.label :Confirme_a_Senha %>
+          <%= form.password_field :password_confirmation %>
+        </div>
+    </div>
+  </div class= 'containerb-form-edit'>
+        <div class="actions">
+          <%= form.submit "Editar" %>
+        </div>
 <% end %>

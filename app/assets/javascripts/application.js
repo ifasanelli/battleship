@@ -8,7 +8,7 @@
 $(main);
 
 function main(){
-    $('main').delay(200).fadeIn(400);
+    $('main').delay(200).slideDown(400);
     $('.dif').click(function(){
         $('.modals, h2').fadeOut(400,function(){
             $('.game').css('display','grid');
