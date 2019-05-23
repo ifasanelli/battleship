@@ -1,6 +1,4 @@
 <p id=”alert”><%= alert %></p>
-
-
 <html lang="pt-br" dir="ltr">
   <head>
         <meta charset="utf-8">
@@ -17,7 +15,7 @@
         </figure>
       </header>
        
-      <main>
+      <main> 
            <h1>Login</h1>
 <%= form_tag sessions_path do |form| %>
   <div class=”field”>
@@ -34,7 +32,8 @@
     <%= submit_tag 'Login' %>
   </div>
 <% end %>
+      <a href='/signup' id="aRegister">CADASTRAR?</a>
       </main>
   </body>
 
-<a href='/signup' id="aRegister">CADASTRAR?</a>
+
