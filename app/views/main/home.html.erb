@@ -16,10 +16,10 @@
             </figure>
            <div>
            <p id="notice"><%= notice %></p>  <!--mensagem de bem vindo-->
-           <p>Bem vindo <%= current_user.nome %> </p>
+           <h1>Bem vindo <%= current_user.nome.capitalize %> </h1>
            </div>
              <nav>
-                <ul>
+                  <ul>
                     <li>
                         <a href='/jogo' id ="play">JOGAR</a>
                     </li>
@@ -30,10 +30,8 @@
                         <a href='/edit' id="aScore">EDITAR PERFIL</a>
                     </li>
                 </ul>
-            </nav>
-        </header>
-        <main>
-         <table class="tableScore">
+                <div class= "nav-container">
+                  <table class="tableScore">
                   <thead>
                       <tr>
                           <th>
@@ -45,13 +43,14 @@
                       </tr>
                   </thead>
                   <tr>
-                      <td>Arnaldo</td>
+                      <td><%= current_user.nome.capitalize %></td>
                       <td>1000pts</td>
                   </tr>
-              </table>
-        
-       </main>
-       <%= link_to "Log out", logout_path %>
+              </table><br>
+               <button class= "home-logout"><%= link_to "SAIR", logout_path %></button>
+              </div>  
+            </nav>
+        </header>
     </body>
     
 </html>

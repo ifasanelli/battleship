@@ -10,7 +10,6 @@ $font-russo: 'Russo One', sans-serif;
      padding: 0.2rem;
  }
 body{
- max-width:1366px;
  max-height:768px;
  padding: 2rem;
  margin:0;
@@ -35,31 +34,56 @@ header{
 }
 
 nav{
+    width: 90%;
     margin: auto;
-    width: 100%;
-    height: 20vh;
+    height: auto;
     background-color: rgba(0,0,0,0.6);
-    font-size: 3rem;
-    padding-top: 1em;
-}
-.dif-list{
-    width:50%;
-    margin: auto;
+    display: flex;
+    box-sizing: border-box;
     padding: 2rem;
 }
 
-li{
-        width: 50%;
-        margin: auto;
-        margin-top: 2rem;
-        background-color: $cor-amarela;
-        list-style: none;
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    width:50%;
 }
- li:hover{
-     color: $cor-amarela;
- }
-li:hover{
+.dif-list{
+    width:50%;
+    padding: 2rem;
+    
+}
+ul{
+    width: 50%;
+}
+li{
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: $cor-amarela;
+    list-style: none;
+    font-size: 2rem;
+}
+
+li:nth-child(1){
+    margin-top: 0;
+}
+.tableScore{
+    font-size: 2rem;
+    color: white;
+    font-family: $font-russo;
+    width: 100%;
+}
+
+.tableScore th, td{
+     border: 1px solid white;
+     padding: 0.5em;
+}
+
+
+li:hover, .home-logout:hover{
     background-color: $cor-vermelha;
+    color: $cor-amarela;
 }
 a:hover{
     cursor: pointer;
@@ -71,6 +95,18 @@ a{
     
 }
 
+.home-logout{
+    width: 20%;
+    height: 50px;
+    background-color: $cor-amarela;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+    padding:0;
+    border: none;
+    border-radius: 10px;
+}
+
 
 main{
     width: 100%;
@@ -79,7 +115,7 @@ main{
     padding-top: 2em;
     background-color: rgba(0,0,0,0.6);
     text-align: center;
-    display:none;
+    display:none;    
     
 }
 
@@ -110,19 +146,6 @@ label{
     font-size: 2em;
     
     
-}
-
-.tableScore{
-    font-size: 2em;
-    color: white;
-    font-family: $font-russo;
-    margin: auto;
-    width: 50%;
-}
-
-.tableScore th,td{
-     border: 1px solid white;
-     padding: 0.5em;
 }
 
 input{
