@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get "/placar" => "main#placar"
   get "/jogo" => "main#jogo"
   get "/edit" => "users#edit"
-  root 'main#index'
+  root 'main#home'
   
   
   get 'sessions/new'

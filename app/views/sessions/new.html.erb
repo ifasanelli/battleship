@@ -1,3 +1,4 @@
+<p id='alert'><%= alert %></p>
 <html lang="pt-br" dir="ltr">
   <head>
         <meta charset="utf-8">
@@ -14,7 +15,9 @@
       </header>
        
       <main> 
+          
           <p id="notice"><%= notice %></p> 
+          
 <%= form_tag sessions_path do |form| %>
   <div class=”field”>
     <%= label_tag :Email %>
