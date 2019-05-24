@@ -8,14 +8,14 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/home', notice: "Logado com sucesso!"
     else
-      redirect_to '/index', notice: "Email ou senha invalido"
+      redirect_to '/login', notice: "Email ou senha invalido"
     end
   end
 
   def destroy
     session.delete(:user_id)
     @current_user = nil
-    redirect_to '/index', notice: "Deslogado!"
+    redirect_to '/login', notice: "Deslogado!"
   end
 
 end
