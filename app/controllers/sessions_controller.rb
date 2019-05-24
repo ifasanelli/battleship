@@ -13,9 +13,9 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    session.delete(:user_id)
+    reset_session
     @current_user = nil
-    redirect_to '/login', notice: "Deslogado!"
+    redirect_to logout_path, notice: "Deslogado!"
   end
 
 end
