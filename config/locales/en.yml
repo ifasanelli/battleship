@@ -36,13 +36,14 @@ en:
         user:
           attributes:
             nome:
-              blank: "Campo em branco"
+              blank: "^Campo nome não pode estar em branco."
             email:
-              blank: "Campo em branco"
-              invalid: " invalido"
+              blank: "^Campo mail não pode estar em branco."
+              invalid: " invalido."
               too_short: " curto (minimo 5 caracteres)"
             password:
-              too_short: "curta (minimo 5 caracteres)"
-              confirmation: "não corresponde "
+              blank: "^ Campo senha não pode estar em branco"
+              too_short: "^ Senha curta (minimo 5 caracteres)"
+              confirmation: "^ Senha não corresponde"
             password_confirmation:
-              confirmation: "não corresponde"
+              confirmation: "^ Senha não corresponde"
