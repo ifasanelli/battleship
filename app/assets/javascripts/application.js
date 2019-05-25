@@ -16,7 +16,7 @@ function main(){
     })
     //-----------------------------------------
     $('.dif').click(function(){
-        $('.modals, h2').fadeOut(400,function(){
+        $('.modal-dif, h2').fadeOut(400,function(){
             $('.game').css('display','grid');
         });
     })

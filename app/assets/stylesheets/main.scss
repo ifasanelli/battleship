@@ -84,7 +84,7 @@ li:nth-child(1){
 }
 
 
-li:hover, .home-logout:hover{
+li:hover, .home-logout:hover, .hint-ok:hover{
     background-color: $cor-vermelha;
     color: $cor-amarela;
 }
@@ -177,10 +177,26 @@ label{
 .modals{
     text-align: center;
     font-size: 2em;
-    
-    
-}
+    display: flex;
+} 
 
+.modals-hint{
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    background-color: black;
+    padding: 2rem;
+    position: absolute;
+    left: 33%;
+    display: none;
+}
+.hint-ok{
+    width: 20%;
+    margin-left: 75%;
+    border: none;
+    color: white;
+    background-color: $cor-amarela;
+}
 input{
     border:none;
     background-color: $cor-amarela;
@@ -216,6 +232,9 @@ input:last-of-type{
     font-family: $font-russo;
 }
 
+.img-level{
+    max-width: 100%;
+}
 
 
 // css Italo
