@@ -10,9 +10,10 @@ $font-russo: 'Russo One', sans-serif;
      padding: 0.2rem;
  }
 body{
+ max-width: 1366px;
  max-height:758px;
  padding: 2rem;
- margin:0;
+ margin:0 auto;
  background-color: black;
  background-image: url(bg.png);
  background-position: top;
@@ -189,6 +190,7 @@ label{
     position: absolute;
     left: 33%;
     display: none;
+    z-index: 1000;
 }
 .hint-ok{
     width: 20%;
