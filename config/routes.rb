@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :pontuacaos
   get "/home" => "main#home"
   get "/placar" => "main#placar"
   get "/jogo" => "main#jogo"

@@ -70,6 +70,7 @@ li{
 li:nth-child(1){
     margin-top: 0;
 }
+
 .tableScore{
     font-size: 2rem;
     color: white;
@@ -162,7 +163,7 @@ form{
     }
 }
 
-    
+ 
 label{
     margin: auto;
     margin-top: 1.5rem;
@@ -181,16 +182,25 @@ label{
     display: flex;
 } 
 
-.modals-hint{
+.modals-hint, .modals-set-ship{
     flex-direction: column;
-    width: 30%;
+    width: 50%;
     height: auto;
     background-color: black;
     padding: 2rem;
     position: absolute;
-    left: 33%;
+    left: 25%;
     display: none;
     z-index: 1000;
+    font-size: 2rem;  
+}
+
+.modals-set-ship{
+    display: flex;
+    input{
+        width:50%;
+        margin: auto;
+    }
 }
 .hint-ok{
     width: 20%;
@@ -235,7 +245,7 @@ input:last-of-type{
 }
 
 .img-level{
-    max-width: 100%;
+    max-height: 286px;
 }
 
 

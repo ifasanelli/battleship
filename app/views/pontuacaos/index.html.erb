@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pontuacaos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pontos</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pontuacaos.each do |pontuacao| %>
+      <tr>
+        <td><%= pontuacao.pontos %></td>
+        <td><%= link_to 'Show', pontuacao %></td>
+        <td><%= link_to 'Edit', edit_pontuacao_path(pontuacao) %></td>
+        <td><%= link_to 'Destroy', pontuacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pontuacao', new_pontuacao_path %>

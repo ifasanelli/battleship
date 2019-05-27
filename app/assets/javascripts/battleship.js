@@ -1358,13 +1358,13 @@ const battleship = {
 };                      
 //codigo do Ariel começa aqui!!!
 
-function send_to_modal(alerta){
-    $('.hint').html(alerta)
-    $('.modals-hint').slideDown(400)
-    $('.hint-ok').click(function(){
-        $('.modals-hint').slideUp(400)
-    })
-}
+// function send_to_modal(alerta){
+//     $('.hint').html(alerta)
+//     $('.modals-hint').slideDown(400)
+//     $('.hint-ok').click(function(){
+//         $('.modals-hint').slideUp(400)
+//     })
+// }
 
 // function play(){
 //     $('nav').delay(500).slideDown(500);

@@ -1,0 +1,2 @@
+class Pontuacao < ApplicationRecord
+end

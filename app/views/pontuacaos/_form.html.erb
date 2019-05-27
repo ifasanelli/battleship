@@ -1,0 +1,22 @@
+<%= form_with(model: pontuacao, local: true) do |form| %>
+  <% if pontuacao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pontuacao.errors.count, "error") %> prohibited this pontuacao from being saved:</h2>
+
+      <ul>
+      <% pontuacao.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :pontos %>
+    <%= form.text_field :pontos %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

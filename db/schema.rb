@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_15_191946) do
+ActiveRecord::Schema.define(version: 2019_05_27_132536) do
+
+  create_table "pontuacaos", force: :cascade do |t|
+    t.decimal "pontos"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "nome"
