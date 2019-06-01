@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   
   get "/home" => "main#home"
-  get "/placar" => "main#placar"
   get "/jogo" => "main#jogo"
   get "/edit" => "users#edit"
   root 'main#home'
