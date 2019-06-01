@@ -16,24 +16,26 @@
        
       <main> 
 
-          <p id="notice"><%= notice %></p> 
           
-<%= form_tag sessions_path do |form| %>
-  <div class='field'>
-    <%= label_tag :Email %>
-    <%= text_field_tag :email %>
-  </div>
-
-  <div class='field'>
-    <%= label_tag :Senha %>
-    <%= password_field_tag :password %>
-  </div>
-
-  <div class='action'>
-    <%= submit_tag 'Login' %>
-  </div>
-  <a href='/signup' id='aRegister'>CADASTRAR?</a>
-<% end %>
+          <div class= 'main-containers-div'>  
+          <p id="notice"><%= notice %></p> 
+            <%= form_tag sessions_path do |form| %>
+              <div class='field'>
+                <%= label_tag :Email %><br>
+                <%= text_field_tag :email %>
+              </div>
+            
+              <div class='field'>
+                <%= label_tag :Senha %><br>
+                <%= password_field_tag :password %>
+              </div>
+            
+              <div class='action'>
+                <%= submit_tag 'Login' %>
+              </div>
+              <a id= 'link_to_cadastro' href='/signup' id='aRegister'>CADASTRAR?</a>
+            <% end %>
+            </div> 
       </main>
   </body>
 
