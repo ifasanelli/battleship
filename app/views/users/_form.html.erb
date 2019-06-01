@@ -1,36 +1,39 @@
-<%= form_with(model: user, local: true) do |form| %>
-  <% if user.errors.any? %>
-    <div id="error_explanation">
-      <ul>
-      <% user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="field">
-    <%= form.label :nome %>
-    <%= form.text_field :nome %>
+  <div class= 'main-containers-div'>
+    <%= form_with(model: user, local: true) do |form| %>
+      <% if user.errors.any? %>
+          <div id="error_explanation">
+              <ul>
+              <% user.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+              </ul>
+          </div>
+          <% end %>
+    
+          <div class="field">
+            <%= form.label :nome %><br>
+            <%= form.text_field :nome %>
+          </div>
+       
+          <div class="field">
+            <%= form.label :email %><br>
+            <%= form.text_field :email %>
+          </div>
+    
+          <div class="field">
+            <%= form.label :Senha %><br>
+            <%= form.password_field :password %>
+          
+          </div>
+          
+          <div class="field">
+            <%= form.label :Confirme_a_Senha %><br>
+            <%= form.password_field :password_confirmation %>
+          </div>
+        
+          <div class="actions">
+            <%= form.submit "CADASTRAR" %>
+          </div>
+    <% end %>
   </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Senha %>
-    <%= form.password_field :password %>
-  
-  </div>
-  
-  <div class="field">
-    <%= form.label :Confirme_a_Senha %>
-    <%= form.password_field :password_confirmation %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit "Cadastrar" %>
-  </div>
-<% end %>
