@@ -19,37 +19,38 @@
            <h1>Bem vindo <%= current_user.nome.capitalize %> </h1>
            </div>
         </header>
-             <nav>
-                  <ul>
-                    <li>
-                        <a href='/jogo' id ="play">JOGAR</a>
-                    </li>
-                    <li>
-                        <a href='/placar' id="aScore">PLACAR</a>
-                    </li>
-                     <li>
-                        <a href='/edit' id="aScore">EDITAR PERFIL</a>
-                    </li>
-                </ul>
-                <div class= "nav-container">
-                  <table class="tableScore">
-                  <thead>
-                      <tr>
-                          <th>
-                              JOGADOR
-                          </th>
-                          <th>
-                              PONTUAÇÃO
-                          </th>
-                      </tr>
-                  </thead>
-                  <tr>
-                      <td><%= current_user.nome.capitalize %></td>
-                      <td>1000pts</td>
-                  </tr>
-              </table><br>
-               <button class= "home-logout"><%= link_to "SAIR", logout_path, :method => :delete %></button>
-              </div>  
+             <nav class= 'main-containers'>
+                <div class= 'main-containers-div'>
+                    <ul>
+                        <li>
+                            <a href='/jogo' id ="play">JOGAR</a>
+                        </li>
+                        <li>
+                            <!--<a href='/placar' id="aScore">PLACAR</a>-->
+                        </li>
+                         <li>
+                            <a href='/edit' id="aScore">EDITAR PERFIL</a>
+                        </li>
+                    </ul>
+                   <button class= "home-logout"><%= link_to "SAIR", logout_path, :method => :delete %></button>
+                </div>
+              <!--  <div class= "nav-division">-->
+              <!--    <table class="tableScore">-->
+              <!--        <thead>-->
+              <!--            <tr>-->
+              <!--                <th>-->
+              <!--                    JOGADOR-->
+              <!--                </th>-->
+              <!--                <th>-->
+              <!--                    PONTUAÇÃO-->
+              <!--                </th>-->
+              <!--            </tr>-->
+              <!--        </thead>-->
+              <!--        <tr>-->
+              <!--            <td><%= current_user.nome.capitalize %></td>-->
+              <!--        </tr>-->
+              <!--</table><br>-->
+              <!--</div>  -->
             </nav>
     </body>
     

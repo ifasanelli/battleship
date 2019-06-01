@@ -12,28 +12,34 @@
             <figure>
                 <img class="logotipo" src="assets/logotipo.png" alt="Logotipo"></img>
             </figure>
-            <h2>ESCOLHA A DIFICULDADE:</h2>
+            <h2 id= 'h2'>ESCOLHA A DIFICULDADE:</h2>
         </header>
-        <main>
 <!-------------------------------------------------------------------------------------->
-        <div class= 'modals modals-hint'>
-            <p class= 'hint'>vc n pode fazer isso mané</p>
-            <button class= 'hint-ok'>OK!</button></div>
-        <div class= 'modals modal-dif'>
-             <div class= 'modals modals-set-ship'><p class= 'hint'>Escolha orientação do navio</p><br>
-             <input type= 'button' value= 'HORIZONTAL'>
-             <input type= 'button' value= 'VERTICAL'>
-             
-         </div>
+        <main class= 'main-container'>
+            <div class= 'modals modals-hint main-containers-div'>
+                <p class= 'hint'>vc n pode fazer isso mané</p>
+                <button class= 'hint-ok'>OK!</button>
+            </div>
+        
+            <div class= 'modals modals-set-ship'><p class= 'set-hint'></p><br>
+                 <input id='h' class= 'orientacao' type= 'button' value= 'HORIZONTAL'>
+                 <input id= 'v' class= 'orientacao' type= 'button' value= 'VERTICAL'>
+                 
+            </div>
 <!---------------------------------------
 <!----------------------------------------------------->
-            <ul class= "dif-list">
-                <li><a class= 'dif' id= 'f' onclick="battleship.level1();battleship.init( document.querySelector('#board1') );battleship.init1( document.querySelector('#board2') );battleship.start();">FÁCIL</a></li>
-                <li><a class= 'dif' id= 'm' onclick="battleship.level2();battleship.init( document.querySelector('#board1') );battleship.init1( document.querySelector('#board2') );battleship.start();">MÉDIO</a> </li>
-                <li><a class= 'dif' id= 'i' onclick="battleship.level3();battleship.init( document.querySelector('#board1') );battleship.init1( document.querySelector('#board2') );battleship.start();">INSANO</a></li>
-            </ul>
-            <figure><img class= 'img-level' src= 'assets/bomb-f.png'></figure>
-        </div>
+            <div class= 'modals modal-dif main-containers-div'>
+                <ul class= "dif-list">
+                    <li id= 'f'><a class= 'dif' onclick="battleship.level1();battleship.init( document.querySelector('#board1') );battleship.init1( document.querySelector('#board2') );battleship.start();">FÁCIL</a></li>
+                    <li id= 'm'><a class= 'dif' onclick="battleship.level2();battleship.init( document.querySelector('#board1') );battleship.init1( document.querySelector('#board2') );battleship.start();">MÉDIO</a> </li>
+                    <li id= 'i'><a class= 'dif' onclick="battleship.level3();battleship.init( document.querySelector('#board1') );battleship.init1( document.querySelector('#board2') );battleship.start();">INSANO</a></li>
+                </ul>
+            </div>
+           
+            <div class= 'modals modal-dif main-containers-div'>
+                 <figure><img class= 'img-level' src= 'assets/bomb-f.png'></figure>
+            </div>
+            
             <div class='game' id='board1'></div>
             <div class='game' id='board2'></div>
         
@@ -49,6 +55,17 @@
         <!--</script>-->
         
     </body>
+    <script>
+        var h2 = $('#h2').html();
+         <%= 
+             new_h2 = javascript_tag('document.write(h2)') 
+             
+             javascript_tag("document.querySelector('h2').innerHTML('aloha')")
+             puts new_h2
+         
+         %>  
+    </script>
+    
     
 </html>
 
