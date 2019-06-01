@@ -1,18 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
 
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
 $cor-branca: #ffffff;
 $cor-vermelha: #b71d1a;
 $cor-amarela: #f9a01b;
 $font-russo: 'Russo One', sans-serif;
+$font-lucky: 'Luckiest Guy', sans-serif;
+$font-p: 1rem;
+$font-m: 2rem;
+$font-g: 3rem;
  *{
      margin: 0;
-     padding: 0.2rem;
+     box-sizing: border-box;
  }
 body{
- max-width: 1366px;
+ max-width: 1930px;
  max-height:758px;
- padding: 2rem;
  margin:0 auto;
  background-color: black;
  background-image: url(bg.png);
@@ -21,182 +28,60 @@ body{
  background-size: 95%;
  font-family: $font-russo;
  color: $cor-branca;
+ background-attachment: fixed;
 }
     
-
 header{
     width: 100%;
     height: auto;
     text-align: center;
     background-color: black;
-}
-
-.logotipo{
-    height: 100px;
-}
-
-nav{
-    width: 90%;
-    margin: auto;
-    height: auto;
-    background-color: rgba(0,0,0,0.6);
-    display: flex;
-    box-sizing: border-box;
-    padding: 2rem;
-}
-
-.nav-container{
-    display: flex;
-    flex-direction: column;
-    width:50%;
-}
-.dif-list{
-    width:50%;
-    padding: 2rem;
-    
-}
-ul{
-    width: 50%;
-}
-li{
-    width: 70%;
-    margin: auto;
-    margin-top: 2rem;
-    background-color: $cor-amarela;
-    list-style: none;
-    font-size: 2rem;
-}
-
-li:nth-child(1){
-    margin-top: 0;
-}
-
-.tableScore{
-    font-size: 2rem;
-    color: white;
-    font-family: $font-russo;
-    width: 100%;
-    border: 2px solid $cor-vermelha;
-}
-
-.tableScore th, td{
-     border: 1px solid white;
-     padding: 0.5em;
-     text-align: left;
-}
-
-
-li:hover, .home-logout:hover, .hint-ok:hover{
-    background-color: $cor-vermelha;
-    color: $cor-amarela;
-}
-
-a:hover{
-    cursor: pointer;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-    width:100%;
-    display: block;
-    text-align: center;
-    
-}
-
-.actions{
-    input:hover{
-        cursor: pointer;
-        background-color: $cor-vermelha;
-        color: $cor-amarela;
-    }
-    input{
-        width: 15%;
-    }
-}
-
-.home-logout{
-    width: 20%;
-    height: 50px;
-    background-color: $cor-amarela;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-    padding:0;
-    border: none;
-    border-radius: 10px;
-}
-
-
-main{
-    width: 100%;
-    height: auto;
-    margin: auto;
     padding: 1rem;
-    background-color: rgba(0,0,0,0.6);
-    text-align: center;
-    display:none;    
-    
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
-form{
-      width: 50%;
-      margin: auto;
-      border: 1px solid $cor-vermelha;
-      padding: 1rem;
-}
-
-.container-form-edit{
-    display: flex;
+main, nav{
     width: 100%;
-}
-
-.container-form-edit{
-    .containerb-form-edit{
-        margin: auto;
-        width: 50%;
-        text-align: left;
-    }
-    label{
-        padding-left: 0;
-        width: 100%;
-    }
-}
-
- 
-label{
+    height: auto;
     margin: auto;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    display: block;
-    height: 10px;
-    width: 50%;
-    padding-left: 11rem;
-    text-align: left;
+    margin-top: 20vh;
+    padding: 10vh;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    display:none;
+    box-sizing: border-box;
 }
 
 .modals{
     text-align: center;
-    font-size: 2em;
+    font-size: $font-m;
     display: flex;
+    width: 70%;
+    margin: auto;
 } 
+
+.main-containers-div{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    float: left;
+}
 
 .modals-hint, .modals-set-ship{
     flex-direction: column;
-    width: 50%;
     height: auto;
     background-color: black;
     padding: 2rem;
     position: absolute;
-    left: 25%;
+    left: 13%;
     display: none;
     z-index: 1000;
-    font-size: 2rem;  
+    font-size: $font-m;  
 }
 
 .modals-set-ship{
-    display: flex;
     input{
         width:50%;
         margin: auto;
@@ -209,61 +94,106 @@ label{
     color: white;
     background-color: $cor-amarela;
 }
-input{
-    border:none;
-    background-color: $cor-amarela;
-    color: white;
-    padding-left: 0.5em;
-    
-}
 
-input:last-of-type{
-    margin-top: 2rem;
-}
-
-#divDifficult ul{
-    margin-top: 2rem;
-}
-.button, .return{
-    border-radius: 20px;
-    width: 100px;
-    background-color: $cor-amarela;
+ul{
     padding: 0;
-    border: solid 3px black;
+    width: 100%;
 }
-.button, .return:hover{
+#error_explanation{
+    position:absolute;
+    left: 0;
+    width: 50%;
+    z-index: 0;
+    li{
+        background-color: black;
+        color: $cor-vermelha;
+    }
+}
+// nav{
+//     width: 90%;
+//     margin: auto;
+//     height: auto;
+//     background-color: rgba(0,0,0,0.6);
+//     display: flex;
+//     box-sizing: border-box;
+//     padding: 2rem;
+// }
+
+// -----------------------------------------------TEXTOS----------------------------------------------------
+#notice{
+    color: $cor-vermelha;
+}
+
+li:hover, a:hover{
     cursor: pointer;
 }
-.return{
-    color: white;
-    display:block; 
-    margin-left: 1em;
-    margin-top: -0.5em;
-}
-.return, input{
-    font-family: $font-russo;
+li{
+    list-style: none;
+    background-color: $cor-amarela;
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 50%;
 }
 
+a, label, input{
+    text-decoration: none;
+    color: $cor-branca;
+    font-size: $font-m;
+}
+
+input{
+    margin-bottom: 2rem;
+    background-color: $cor-amarela;
+    border: none;
+    font-size: $font-p;
+    font-family: $font-russo;
+}
+// ------------------------------------------------BOTOES-------------------------------------
+.home-logout{
+    background-color: $cor-vermelha;
+    border: none;
+    margin-top: 1rem;
+}
+
+.action{
+    input{
+        border: none;
+        margin-top: 1rem;
+    }
+}
+li:hover, .home-logout:hover, .hint-ok:hover{
+    background-color: $cor-vermelha;
+    color: $cor-amarela;
+}
+
+#link_to_cadastro{
+    font-size: $font-p;
+}
+
+// --------------------------------------------IMAGENS!important!important
+
+.logotipo{
+    height: 100px;
+}
 .img-level{
     max-height: 286px;
 }
 
 
-// css Italo
+// ----------------------------------------------css Italo
 
 
 
 .game {
-    width:35%;
-    height: 500px;
-    margin-left:10%;
-    background-color: #fff;
+    width:40%;
+    height: auto;
+    margin: auto;
+    background-color: green;
     color: #fff;
     border: 1px solid #2c3e50;
     border-radius: 5px;
     display: none;
     grid-template: repeat(10, 1fr) / repeat(10, 1fr);
-    float: left;
     transform:rotateX(0deg);
 }
   
@@ -274,14 +204,10 @@ input:last-of-type{
     font-weight: bold;
     font-size: 1em;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-image: url(assets/navios/A1.png);
     width: 100%;
-    height: 100%;
+    height: 51px;
 }
-
-
-// Place all the styles related to the main controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
