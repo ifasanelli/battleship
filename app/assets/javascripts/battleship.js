@@ -1,4 +1,8 @@
 //BATTLESHIP
+var or= '';
+var set_ship_count = 0;
+// precisei de uma variavel global
+            //pra passar o valor de orientação dos navios
 const battleship = {
 
     // ATRIBUTOS
@@ -646,10 +650,19 @@ const battleship = {
     },
 
     posiciona_navio: function(position){
-        var orient = prompt("Digite a orientação desejada:\n'v' para vertical\n'h' para horizontal", "");
-        if (this.board2[position] == ''){
+                     
+                     var orient = or;
+                     alert_set_ship("Escolha a orientação desejada:")
+             
+             if(or == 'v' || or =='h'){
+                 
+                 if (this.board2[position] == ''){
+           
             if(this.cnt == 0){
+                
                 if (orient == 'v' || orient == 'V'){
+                   
+         
                     if (position == 60 || position == 70 || position == 80 || position == 90 ||
                         position == 61 || position == 71 || position == 81 || position == 91 ||
                         position == 62 || position == 72 || position == 82 || position == 92 ||
@@ -1012,6 +1025,15 @@ const battleship = {
             this.set_navio = true;
             this.jogadas();
         }
+                 
+                 
+                 
+                 
+                 
+             }
+         
+        // var orient = prompt("Digite a orientação desejada:\n'v' para vertical\n'h' para horizontal", "");
+       
     },
 
     posiciona_navio_adv: function(){
@@ -1046,7 +1068,7 @@ const battleship = {
                             this.board[pos+30] = ' ';
                             this.board[pos+40] = ' ';
                             this.draw();
-                            alert('Porta-aviões posicionado!');
+                            // alert('Porta-aviões posicionado!');
                             this.cnt1 += 1;
                             //alert(this.cnt1 + '-5v');
                         }
@@ -1079,7 +1101,7 @@ const battleship = {
                             this.board[pos+3] = ' ';
                             this.board[pos+4] = ' ';
                             this.draw();
-                            alert('Porta-aviões adversário posicionado!');
+                            // alert('Porta-aviões adversário posicionado!');
                             this.cnt1 += 1;
                             //alert(this.cnt1 + '-5h');
                         }
@@ -1112,7 +1134,7 @@ const battleship = {
                             this.board[pos+20] = ' ';
                             this.board[pos+30] = ' ';
                             this.draw();
-                            alert('Destroyer adversário posicionado!');
+                            // alert('Destroyer adversário posicionado!');
                             this.cnt1 += 1;
                             //alert(this.cnt1 + '-4v');
                         }
@@ -1143,7 +1165,7 @@ const battleship = {
                             this.board[pos+2] = ' ';
                             this.board[pos+3] = ' ';
                             this.draw();
-                            alert('Destroyer adversário posicionado!');
+                            // alert('Destroyer adversário posicionado!');
                             this.cnt1 += 1;
                             //alert(this.cnt1 + '-4h');
                         }
@@ -1174,7 +1196,7 @@ const battleship = {
                             this.board[pos+10] = ' ';
                             this.board[pos+20] = ' ';
                             this.draw();
-                            alert('Fragata adversária posicionada!');
+                            // alert('Fragata adversária posicionada!');
                             this.cnt1 += 1;
                             //alert(this.cnt1 + '-3v');
                         }
@@ -1203,7 +1225,7 @@ const battleship = {
                             this.board[pos+1] = ' ';
                             this.board[pos+2] = ' ';
                             this.draw();
-                            alert('Fragata adversária posicionada!');
+                            // alert('Fragata adversária posicionada!');
                             this.cnt1 += 1;
                             //alert(this.cnt1 + '-3h');
                         }
@@ -1232,7 +1254,7 @@ const battleship = {
                             this.board[pos] = ' ';
                             this.board[pos+10] = ' ';
                             this.draw();
-                            alert('Submarino adversário posicionado!');
+                            // alert('Submarino adversário posicionado!');
                             this.cnt1 += 1;
                             //alert(this.cnt1 + '-2av');
                         }
@@ -1259,7 +1281,7 @@ const battleship = {
                             this.board[pos] = ' ';
                             this.board[pos+1] = ' ';
                             this.draw();
-                            alert('Submarino adversário posicionado!');
+                            // alert('Submarino adversário posicionado!');
                             this.cnt1 += 1;
                             //alert(this.cnt1 + '-2ah');
                         }
@@ -1288,7 +1310,7 @@ const battleship = {
                             this.board[pos] = ' ';
                             this.board[pos+10] = ' ';
                             this.draw();
-                            alert('Submarino adversário posicionado!');
+                            // alert('Submarino adversário posicionado!');
                             alert('Faça sua jogada!');
                             this.cnt1 += 1;
                             //alert(this.cnt1 + '-2bv');
@@ -1316,8 +1338,8 @@ const battleship = {
                             this.board[pos] = ' ';
                             this.board[pos+1] = ' ';
                             this.draw();
-                            alert('Submarino adversário posicionado!');
-                            alert('Faça sua jogada!');
+                            // alert('Submarino adversário posicionado!');
+                            send_to_modal('Faça sua jogada no tabuleiro da esquerda!');
                             this.cnt1 += 1;
                             //alert(this.cnt1 + '-2bh');
                         }
@@ -1358,66 +1380,26 @@ const battleship = {
 };                      
 //codigo do Ariel começa aqui!!!
 
-// function send_to_modal(alerta){
-//     $('.hint').html(alerta)
-//     $('.modals-hint').slideDown(400)
-//     $('.hint-ok').click(function(){
-//         $('.modals-hint').slideUp(400)
-//     })
-// }
+function send_to_modal(alerta){
+    $('.hint').html(alerta)
+    $('.modals-hint').slideDown(400)
+    $('.hint-ok').click(function(){
+        $('.modals-hint').slideUp(400)
+    })
+}
 
-// function play(){
-//     $('nav').delay(500).slideDown(500);
-    // $('#play').click(function(){
-    //     $('nav').fadeOut(400,function(){
-    //         $('main').slideDown(400,function(){
-    //               battleship.init( document.querySelector('#board1') ),
-    //               battleship.init1( document.querySelector('#board2') ),
-    //               battleship.start()
-    //         })
-    //     });
-        
-            // battleship.init( document.querySelector('#board1') ),
-            // battleship.init1( document.querySelector('#board2') ),
-            // battleship.start()
-    // });
-    
-    // seleao niveis
+function alert_set_ship(alerta){
     
     
-//     $('#aLogin').click(function(){
-//         $('nav').slideUp(400,function(){
-//             $('#divLogin').slideDown(400)
-//         })
-//     })
-//     $('#aScore').click(function(){
-//         $('nav').slideUp(400,function(){
-//             $('#divScore').slideDown(400)
-//         })
-//     })
-//      $('#aRegister').click(function(){
-//         $('nav').slideUp(400,function(){
-//             $('#divRegister').slideDown(400)
-//         })
-//     })
-    
-//     $(".return").click(function() {
-//         $(this).parent("div").slideUp(400,function(){
-//             $("nav").slideDown(400)
-//         })
-//     })
-// }
-// código mira-->
-// $(main);
-// function main(){
-// $("main div").click(function(){
-//     var x = $(this).position();
-//   if(x.top>0){
-//     $("#aimH").animate( {top:"0px"});
-//     $("#aimV").animate( {left:"0px"});
-//     $("#aimH").animate( {top:x.top+50});
-//     $("#aimV").animate( {left:x.left+50});
-//     //alert("top="+x.top+"px "+"left ="+x.left+"px");
-//   }
-    
-// });}
+    if(set_ship_count < 5){
+        $('.set-hint').html(alerta)
+        $('.modals-set-ship').delay(800).slideDown(400)
+            $('.orientacao').click(function(){
+                $('.modals-set-ship').slideUp(400)
+                or = $(this).attr('id');
+            })
+        set_ship_count +=1;
+
+    }
+}
+ 
