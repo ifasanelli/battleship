@@ -38,7 +38,7 @@ en:
             nome:
               blank: "^Campo nome não pode estar em branco."
             email:
-              blank: "^Campo mail não pode estar em branco."
+              blank: "^Campo email não pode estar em branco."
               invalid: " invalido."
               too_short: " curto (minimo 5 caracteres)"
             password:
