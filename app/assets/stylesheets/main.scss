@@ -68,7 +68,7 @@ header{
     float: left;
 }
 
-.modals-hint, .modals-set-ship{
+.modals-hint, .modals-set-ship, .modals-play-again{
     flex-direction: column;
     height: auto;
     background-color: black;
@@ -92,6 +92,19 @@ header{
     border: none;
     color: white;
     background-color: $cor-amarela;
+}
+
+.modals-play-again{
+    a{
+        background-color: $cor-amarela;
+        border: none;
+        padding: 0.5rem;
+        font-size: $font-p;
+        margin-top: 1rem;
+    }
+    a:hover{
+        background-color: $cor-vermelha;
+    }
 }
 
 ul{
@@ -148,7 +161,7 @@ input{
     font-family: $font-russo;
 }
 // ------------------------------------------------BOTOES-------------------------------------
-.home-logout{
+.home-logout, .botao-voltar{
     background-color: $cor-vermelha;
     border: none;
     margin-top: 1rem;
@@ -167,6 +180,18 @@ li:hover, .home-logout:hover, .hint-ok:hover{
 
 #link_to_cadastro{
     font-size: $font-p;
+}
+
+.botao-voltar{
+    position: fixed;
+    z-index: 501;
+    color: $cor-branca;
+    font-size: $font-p;
+    padding: 0.5rem;
+    top: 0;
+}
+.botao-voltar:hover, .home-logout:hover{
+    cursor: pointer;
 }
 
 // --------------------------------------------IMAGENS!important!important

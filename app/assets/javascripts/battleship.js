@@ -1388,7 +1388,7 @@ function sendReq(obj){
         var objResp = JSON.parse(this.responseText);
     }
     };
-    xhttp.open("POST", "https://ruby-italofasanelli.c9users.io/scores.json", true);
+    xhttp.open("POST", "/scores.json", true);
     xhttp.setRequestHeader("Content-Type","application/json");
     xhttp.send(JSON.stringify(obj));
 };
@@ -1403,6 +1403,8 @@ function send_to_modal(alerta){
         $('.modals-hint').slideUp(400)
     })
 }
+
+
 
 function alert_set_ship(alerta){
     
@@ -1419,3 +1421,13 @@ function alert_set_ship(alerta){
     }
 }
  
+function modal_victory(alerta){
+       
+       $('.modals-play-again').slideDown(400).css('display','flex')
+       $('.modals-play-again .vic').html(alerta)
+       $('.modals-play-again a').click(function() {
+           $('.modals-play-again').slideUp(400)
+       })
+       
+    
+}

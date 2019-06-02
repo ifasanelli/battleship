@@ -7,6 +7,7 @@
 
 $(main);
 
+
 function main(){
     $('.main-containers').delay(200).slideDown(400, function(){
         $(this).css('display','flex')
@@ -28,5 +29,5 @@ function main(){
     })
     //------------------------------------------
     
-    
+   
 }
