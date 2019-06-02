@@ -95,7 +95,8 @@ const battleship = {
         //this.board.fill('');
         this.draw();
         this.gameover = false;
-        send_to_modal('Clique no segundo tabuleiro para posicionar seus navios');
+        //send_to_modal('Clique no segundo tabuleiro para posicionar seus navios');
+        this.jogadas();
         // alert("Clique no segundo tabuleiro para posicionar seus navios"); 
         this.hover_div();
     },
@@ -643,7 +644,7 @@ const battleship = {
     posiciona_navio: function(position){
                      
         var orient = or;
-        alert_set_ship("Escolha a orientação, em seguida selecione a casa desejada:");
+        alert_set_ship("Escolha a orientação, em seguida selecione a casa desejada no segundo tabuleiro:");
              
         //if(or == 'v' || or =='h'){
                  
