@@ -10,6 +10,7 @@ class MainController < ApplicationController
     
     def placar
         @users = User.all
+        @array = []
     end
 
 end

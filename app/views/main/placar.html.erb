@@ -6,6 +6,7 @@
             <h1>PLACAR:</h1>
 </header>
 
+
 <table id='tableplc'>
 
 <thead>	
@@ -19,17 +20,31 @@
 <tbody>
 
 	<% @users.each do |user| %>
-		<tr class='tds'>
-			<td>
-				<%= user.nome.capitalize %>
-			</td>										
-			<td>
-				<%= user.scores.count * 100 %>
-			</td>
-		</tr>
-	<% end %>
+    	
+    	<% @array << {"nm" => user.nome.capitalize, "pt" => user.scores.count * 100} %>
+    	
+    	<% @array = @array.sort_by{ |hsh| hsh["pt"] }.reverse %>
+	
+    <% end %>
+    
+    <% @array.each do |usr| %>
+        <tr class='tds'>
+        	<td>
+        		<%= usr.fetch("nm") %>
+        	</td>										
+        	<td>
+        		<%= usr.fetch("pt") %>
+        	</td>
+    	</tr>
+    <% end %>
+    
+    
+	
 </tbody>
 
 </table>
+
+
+
 
 
