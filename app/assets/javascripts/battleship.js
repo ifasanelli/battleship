@@ -79,6 +79,8 @@ const battleship = {
            'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
            'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg',
            'assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg','assets/A0.jpg'],
+    check1: false,
+    check2: false,
 
     // FUNÇÕES
     init: function(container) {
@@ -109,9 +111,6 @@ const battleship = {
     game_is_over: function() {
         this.gameover = true;
         console.log('GAME OVER');
-        send_to_modal('GAME OVER'); // REMOVER ESSE MODAL APÓS COLOCAR O DA LINHA ABAIXO
-        // COLOCAR AQUI O MODAL PERGUNTANDO SE VAI JOGAR DE NOVO OU SERÁ ENCAMINHADO PRA /HOME
-        // alert('GAME OVER')
     },    
 
     draw: function() {
@@ -1360,13 +1359,17 @@ const battleship = {
         };
         if(vit_board == 16){
             this.gameover = true;
+            this.check1 = true;
             //alert('Você venceu!!!');
-            send_to_modal('Você venceu!!!');
+            //send_to_modal('Você venceu!!!');
             funcmain();
+            modal_victory("VOCÊ VENCEU!!!\nDESEJA JOGAR NOVAMENTE?");
         }else if(vit_board2 == 16){
             this.gameover = true;
+            this.check2 = true;
+            modal_victory("VOCÊ PERDEU!!!\nDESEJA JOGAR NOVAMENTE?");
             //alert('Perdeu pra máquina...')
-            send_to_modal('Perdeu pra máquina...');
+            //send_to_modal('Perdeu pra máquina...');
         }
     },
 };      
@@ -1403,8 +1406,7 @@ function send_to_modal(alerta){
 
 
 function alert_set_ship(alerta){
-    
-    
+
     if(set_ship_count < 5){
         $('.set-hint').html(alerta)
         $('.modals-set-ship').delay(800).slideDown(400)
@@ -1413,17 +1415,15 @@ function alert_set_ship(alerta){
                 or = $(this).attr('id');
             })
         set_ship_count +=1;
-
     }
 }
  
 function modal_victory(alerta){
-       
-       $('.modals-play-again').slideDown(400).css('display','flex')
-       $('.modals-play-again .vic').html(alerta)
-       $('.modals-play-again a').click(function() {
-           $('.modals-play-again').slideUp(400)
-       })
-       
-    
+    $('.modals-play-again').slideDown(400).css('display','flex')
+    $('.modals-play-again .vic').html(alerta)
+    $('.modals-play-again a').click(function() {
+        $('.modals-play-again').slideUp(400);
+        window.location.reload();
+       //alert("porra");
+    })
 }
