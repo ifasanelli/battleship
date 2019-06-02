@@ -183,11 +183,7 @@ const battleship = {
             }else if(this.set_navio && this.set_navio_adv){
                 this.ctrl_posiciona = true;
             }
-        }else{
-            send_to_modal("FIM!");
-            // alert("FIM!");
         }
-
     },
 
     nivel_facil: function(){
@@ -1388,7 +1384,7 @@ function sendReq(obj){
         var objResp = JSON.parse(this.responseText);
     }
     };
-    xhttp.open("POST", "https://ruby-italofasanelli.c9users.io/scores.json", true);
+    xhttp.open("POST", "/scores.json", true);
     xhttp.setRequestHeader("Content-Type","application/json");
     xhttp.send(JSON.stringify(obj));
 };

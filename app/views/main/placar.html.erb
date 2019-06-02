@@ -3,19 +3,33 @@
             <figure>
                 <img class="logotipo" src="assets/logotipo.png" alt="Logotipo"></img>
             </figure>
-            <h2 id= 'h2'>ESCOLHA A DIFICULDADE:</h2>
+            <h1>PLACAR:</h1>
 </header>
 
-<main class = 'main-containers'>
-    <% @users.each do |user| %>
-        <ul>
-            <li>
-                <%=  user.nome  %>    
-            </li>
-            
-            <li>
-                <%=  user.scores.count  %> pontos
-            </li>
-        </ul>
-    <% end %>
-</main>
+<table id='tableplc'>
+
+<thead>	
+	<tr class='tds'>
+		<th>NOME</th>																		
+		<th>PONTOS</th>  
+	</tr>
+
+</thead>
+
+<tbody>
+
+	<% @users.each do |user| %>
+		<tr class='tds'>
+			<td>
+				<%= user.nome.capitalize %>
+			</td>										
+			<td>
+				<%= user.scores.count * 100 %>
+			</td>
+		</tr>
+	<% end %>
+</tbody>
+
+</table>
+
+
