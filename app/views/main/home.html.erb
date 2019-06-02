@@ -17,6 +17,7 @@
            <div>
            <p id="notice"><%= notice %></p>
            <h1>Bem vindo <%= current_user.nome.capitalize %> </h1>
+           <h2>Pontuação: <%= @pontos %></h2>
            </div>
         </header>
              <nav class= 'main-containers'>
@@ -26,7 +27,7 @@
                             <a href='/jogo' id ="play">JOGAR</a>
                         </li>
                         <li>
-                            <!--<a href='/placar' id="aScore">PLACAR</a>-->
+                            <a href='/placar' id="aScore">PLACAR</a>
                         </li>
                          <li>
                             <a href='/edit' id="aScore">EDITAR PERFIL</a>

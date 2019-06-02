@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   
+  match '/scores.json' => "scores#options", via: :options
+  resources :scores
   get "/home" => "main#home"
   get "/jogo" => "main#jogo"
+  get "/placar" => "main#placar"
   get "/edit" => "users#edit"
   root 'main#home'
   

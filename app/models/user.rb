@@ -7,4 +7,6 @@ class User < ApplicationRecord
     has_secure_password
     
     validates :nome, presence: true, length: { minimum: 0 }, uniqueness: false    #validação nome
+
+    has_many :scores
 end

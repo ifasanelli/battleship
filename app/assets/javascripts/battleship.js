@@ -1366,13 +1366,34 @@ const battleship = {
             this.gameover = true;
             //alert('Você venceu!!!');
             send_to_modal('Você venceu!!!');
+            funcmain();
         }else if(vit_board2 == 16){
             this.gameover = true;
             //alert('Perdeu pra máquina...')
             send_to_modal('Perdeu pra máquina...');
         }
     },
-};                      
+};      
+
+function funcmain(){
+        var point = 100;
+        var pontuacao = {"point":point};
+        sendReq(pontuacao);
+};
+
+function sendReq(obj){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 201) {
+        var objResp = JSON.parse(this.responseText);
+    }
+    };
+    xhttp.open("POST", "https://ruby-italofasanelli.c9users.io/scores.json", true);
+    xhttp.setRequestHeader("Content-Type","application/json");
+    xhttp.send(JSON.stringify(obj));
+};
+
+
 //codigo do Ariel começa aqui!!!
 
 function send_to_modal(alerta){
