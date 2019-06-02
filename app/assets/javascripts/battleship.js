@@ -183,11 +183,7 @@ const battleship = {
             }else if(this.set_navio && this.set_navio_adv){
                 this.ctrl_posiciona = true;
             }
-        }else{
-            send_to_modal("FIM!");
-            // alert("FIM!");
         }
-
     },
 
     nivel_facil: function(){
