@@ -1,7 +1,21 @@
 
-<% @users.each do |user| %>
-    <li>
-        <%=  user.nome  %>    
-        <%=  user.scores.count  %>  
-    </li>
-<% end %>
+ <header>
+            <figure>
+                <img class="logotipo" src="assets/logotipo.png" alt="Logotipo"></img>
+            </figure>
+            <h2 id= 'h2'>ESCOLHA A DIFICULDADE:</h2>
+</header>
+
+<main class = 'main-containers'>
+    <% @users.each do |user| %>
+        <ul>
+            <li>
+                <%=  user.nome  %>    
+            </li>
+            
+            <li>
+                <%=  user.scores.count  %> pontos
+            </li>
+        </ul>
+    <% end %>
+</main>

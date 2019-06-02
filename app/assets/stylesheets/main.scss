@@ -42,11 +42,10 @@ header{
     z-index: 10;
 }
 
-main, nav{
+.main-containers{
     width: 100%;
     height: auto;
     margin: auto;
-    margin-top: 20vh;
     padding: 10vh;
     background-color: rgba(0,0,0,0.6);
     display: flex;
@@ -195,6 +194,7 @@ li:hover, .home-logout:hover, .hint-ok:hover{
     display: none;
     grid-template: repeat(10, 1fr) / repeat(10, 1fr);
     transform:rotateX(0deg);
+    z-index: 2;
 }
   
 .game > div {
