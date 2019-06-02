@@ -2,5 +2,13 @@
   "name": "battleship",
   "private": true,
   "dependencies": {},
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "devDependencies": {
+    "webpack": "^4.32.2",
+    "webpack-dev-server": "^3.5.1"
+    "engines": {
+    "node": ">=6.0.0",
+    "yarn": ">=0.25.2"
+  }
+  }
 }
